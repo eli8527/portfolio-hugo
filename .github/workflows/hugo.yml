@@ -16,10 +16,12 @@ jobs:
       uses: klakegg/actions-hugo@1.0.0
       with:
         command: --minify
+
+    - name: Create cname file
+      run: echo 'eric.young.li' > public/CNAME
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
-      if: ${{ github.ref == 'refs/heads/master' }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
