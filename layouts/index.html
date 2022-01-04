@@ -1,0 +1,86 @@
+{{ define "main" }}
+  <main>
+    <header>
+      <h1>{{.Title}}</h1>
+    </header>
+    <section>
+      {{.Content}}
+    </section>
+    <section>  
+      <fieldset>
+        <legend>
+          <h2 style="display: inline;">&nbsp;news&nbsp;</h2>
+        </legend>
+        <ul>
+          {{- range $.Site.Data.news }}
+            <li>
+              <p>
+                {{- . | markdownify -}}
+              </p>
+            </li>
+          {{ end -}}
+        </ul>
+      </fieldset>
+    </section>
+    <section>
+      <h2>ongoing projects</h2>
+      <ul>
+        {{- range (sort (where (where .Site.RegularPages "Type" "works") "Params.ongoing" true) "File.Path").Reverse}}
+          <li>
+              <p>
+                <span role="heading" aria-level="3">{{ .Title | markdownify}}</span> [<a href="#{{.Title | urlize}}">&darr;</a>] {{- partial "works/link-list.html" . -}}
+              </p>
+          </li>
+        {{ end -}}
+      </ul>
+    </section>
+    <section>
+      <h2>chronology</h2>
+      <dl>
+        {{- range (sort (where .Site.RegularPages "Type" "works") "File.Path").Reverse}}
+          {{- $page := . -}}
+          <dt id="{{.Title | urlize}}">
+            <p>
+              <strong role="heading" aria-level="3">{{ .Title | markdownify}}</strong>, {{.Params.Years}}
+            </p>
+          </dt>
+          <dd>
+            <p>
+              {{ .Description | markdownify }}
+              {{- partial "works/link-list.html" . -}}
+            </p>
+            
+            {{- with .Params.Gallery }}
+              <details>
+                <summary>gallery ({{len .}})</summary>
+                <div role="list">
+                  {{- range .}}
+                    <figure role="listitem">
+                      {{- with $page.Resources.GetMatch .src}}
+                        <img width="100%" src="{{((.Resize "1400x").RelPermalink)}}" loading="lazy"/>
+                      {{end -}}
+                      {{- with .title}}
+                        <figcaption>{{. | markdownify}}</figcaption>
+                      {{ end -}}
+                    </figure>
+                  {{end -}}
+                </div>
+              </details>
+            {{ end -}}
+          </dd>
+        {{ end -}}
+      </dl>
+      <br>
+      <p>
+        more work can be found <a href="https://archive.eric.young.li/">here</a>.
+      </p>
+    </section>
+  </main>
+{{ end }}
+{{define "footer"}}
+  <br>
+  <footer>
+    <hr>
+    <small>site last updated {{ now.Format "Mon, Jan 2, 2006, 15:04:05 MST"}}. this site is always a work in progress.</small>
+  </footer>
+{{end}}

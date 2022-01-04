@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="initial-scale=1,width=device-width,viewport-fit=cover" name="viewport" />
+    <meta name="color-scheme" content="dark light">
+    {{- block "head" .}}{{ end -}}
+    {{- $favicon := resources.Get "/icons/favicon.ico" -}}
+    <link href="{{$favicon.RelPermalink}}" rel="shortcut icon" sizes="64x64" type="image/x-icon" />
+    
+    <title>
+      {{- block "title" . -}}
+        {{ .Site.Title }}
+      {{- end -}}
+    </title>
+
+    {{- $mainCss := resources.Get "/styles/main.css" -}}
+    <link href="{{($mainCss | resources.Fingerprint "sha512").Permalink}}" rel="stylesheet" />
+
+    {{- $darkCss := resources.Get "/styles/dark.css" -}}
+    <link href="{{($darkCss | resources.Fingerprint "sha512").Permalink}}" rel="stylesheet" media="(prefers-color-scheme: dark)" />
+    
+    {{- with .Site.Params.Ga }}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{.}}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{.}}');
+      </script>
+    {{end -}}
+  </head>
+  <body>
+    <!-- Code that all your templates share, like a header -->
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ end }}
+    <aside>
+      <button onclick="toggleLayout()">&#10227;</button>
+      <script>
+        toggleLayout = () => {
+          document.body.classList.toggle('layout');
+        }
+      </script>
+    </aside>
+    <br>
+    <br>
+  </body>
+</html>

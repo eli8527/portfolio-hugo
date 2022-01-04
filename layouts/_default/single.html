@@ -1,0 +1,29 @@
+{{define "title"}}
+  {{.Title | markdownify | plainify}} | {{ .Site.Title }}
+{{end}}
+
+{{ define "main" }}
+    <main>
+      <header>
+        <h1>{{.Title | markdownify}}</h1>
+      </header>
+      <section>
+        {{- if .Content}}
+          {{.Content}}
+        {{else}}
+          <p>
+            {{.Description | markdownify}}
+          </p>
+        {{ end -}}
+      </section>
+    </main>
+{{ end }}
+
+{{define "footer"}}
+  <footer>
+    <hr>
+    <p>
+      <a href="/">&#8617;</a>
+    </p>
+  </footer>
+{{end}}

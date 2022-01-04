@@ -1,0 +1,14 @@
+baseURL: http://eric.young.li/
+languageCode: en-us
+title: eric li
+
+params:
+  ga: 'UA-57660834-7'
+
+permalinks:
+  works: /:title/
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
