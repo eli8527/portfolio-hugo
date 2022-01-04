@@ -17,11 +17,9 @@ jobs:
       with:
         command: --minify
 
-    - name: Create cname file
-      run: echo 'eric.young.li' > public/CNAME
-    
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
+        cname: eric.young.li
