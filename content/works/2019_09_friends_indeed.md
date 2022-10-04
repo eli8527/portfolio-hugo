@@ -1,8 +1,8 @@
 ---
 title: Friends Indeed Gallery
-ongoing: true
-years: 2019–present
+ongoing: false
+years: 2022
 links:
-  - www: http://eric.youngli.com
+  - www: https://friendsindeed.art/
 description: founded by micki meng, with me and nazli, Friends Indeed is an experimental gallery based in the bay area.
 ---
