@@ -17,8 +17,8 @@
     {{- $mainCss := resources.Get "/styles/main.css" -}}
     <link href="{{($mainCss | resources.Fingerprint "sha512").RelPermalink}}" rel="stylesheet" />
 
-    {{- $darkCss := resources.Get "/styles/dark.css" -}}
-    <link href="{{($darkCss | resources.Fingerprint "sha512").RelPermalink}}" rel="stylesheet" media="(prefers-color-scheme: dark)" />
+    <!-- {{- $darkCss := resources.Get "/styles/dark.css" -}} -->
+    <!-- <link href="{{($darkCss | resources.Fingerprint "sha512").RelPermalink}}" rel="stylesheet" media="(prefers-color-scheme: dark)" /> -->
     
     {{- with .Site.Params.Ga }}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{.}}"></script>
