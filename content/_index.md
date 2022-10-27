@@ -5,4 +5,6 @@ sure, why not. this website is the culmination of many attempts to keep a histor
 
 i am a designer and software developer based in new york. i most recently worked at [MoMA](https://www.moma.org/), making the website and focusing on design strategy. it is a bit more fancy than this one. i also do my own stuff. you can find a more detailed bio [here](/about/).
 
+**i am currently looking for full-time design roles. you can find some more information about my work and an up to date resumé at my [read.cv](https://cv.eric.young.li/) or in my [bio](/about/).**
+
 here, you can eventually find a somewhat complete archive of my work. i am in the slow process of updating it. you can also find me on [e-mail](mailto:ericyoungli@gmail.com), [are.na](https://www.are.na/eric-li), [twitter](https://twitter.com/eli8527), and [instagram](https://www.instagram.com/eli8527/).
