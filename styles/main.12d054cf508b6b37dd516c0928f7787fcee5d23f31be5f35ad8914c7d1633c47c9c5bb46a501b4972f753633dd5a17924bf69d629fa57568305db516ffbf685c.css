@@ -3,8 +3,8 @@
 }
 
 body {
-  letter-spacing: .025rem;
-  background-color: rgba(238, 238, 238, .47);
+  background-color: #fefefe;
+  font-family: sans-serif;
 }
 
 main, footer {
