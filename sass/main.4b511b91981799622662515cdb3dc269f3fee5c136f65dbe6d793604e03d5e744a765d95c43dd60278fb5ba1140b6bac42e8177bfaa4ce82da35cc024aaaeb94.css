@@ -1,3 +1,4 @@
+@import url(/fonts/stylesheet.css);
 :root {
   font-size: 62.5%; }
 
@@ -90,6 +91,10 @@ a {
     color: #00F; }
   a:hover {
     text-decoration: none; }
+  a:focus-visible {
+    outline: 0.3rem solid rgba(0, 0, 0, 0.7);
+    outline-offset: 0.4rem;
+    border-radius: 0.25rem; }
 
 p, ul {
   margin-top: 1em; }
