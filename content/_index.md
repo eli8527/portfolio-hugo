@@ -15,4 +15,4 @@ I spent 3+ years as a Senior Product Designer and Developer at the [Museum of Mo
 
 Learn more about my work [here](https://cv.eric.young.li/). More soon.
 
-⌘
+<a href="mailto:ericyoungli@gmail.com" class="no-underline">⌘</a>
