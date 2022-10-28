@@ -9,7 +9,7 @@ i am a designer and software developer based in new york. i most recently worked
 
 here, you can eventually find a somewhat complete archive of my work. i am in the slow process of updating it. you can also find me on [e-mail](mailto:ericyoungli@gmail.com), [are.na](https://www.are.na/eric-li), [twitter](https://twitter.com/eli8527), and [instagram](https://www.instagram.com/eli8527/). -->
 
-Eric Li is a designer and software engineer based in New York.
+# Eric Li is a designer and software engineer based in New York.
 
 I spent 3+ years a Senior Product Designer and Developer at the [Museum of Modern Art](https://www.moma.org/). I also teach interaction design and computer science at [RISD](http://source.f22.href.blue/) and [Parsons](https://js.f22.href.blue/), and am 1/2 of [Studio Ercan–Li](https://ercan-li.com/).
 

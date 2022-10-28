@@ -35,12 +35,9 @@ main {
   max-width: var(--max-width);
 }
 
-h1 {
+header {
   font-size: var(--typography--size--h1);
   line-height: var(--line-height--heading);
-}
-
-header {
   margin: var(--gutter) 0;
 
   @include desktop {
