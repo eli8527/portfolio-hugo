@@ -4,7 +4,7 @@
 
 :root {
   --typography--size: 1.8rem;
-  --typography--size--h1: calc(var(--typography--size) * 2);
+  --typography--size--h1: calc(var(--typography--size) * 1.5);
 
   --line-height: 1.25;
   --line-height--heading: 1.1;
@@ -16,6 +16,7 @@
 
   @include desktop {
     --typography--size: 2.4rem;
+    --typography--size--h1: calc(var(--typography--size) * 2);
     --gutter: 4.0rem;
   }
 }
