@@ -50,7 +50,7 @@ input {
 
 :root {
   --typography-size: 1.8rem;
-  --typography-size--h1: calc(var(--typography--size) * 1.5);
+  --typography-size--h1: calc(var(--typography-size) * 1.5);
   --leading: 1.25;
   --leading--heading: 1.1;
   --tracking: -0.1rem;
