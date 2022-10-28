@@ -1,5 +1,6 @@
 @import 'reset.scss';
 @import 'mixins.scss';
+@import '/fonts/stylesheet.css';
 
 :root {
   --typography--size: 1.8rem;
@@ -60,6 +61,12 @@ a {
 
   &:hover {
     text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 0.3rem solid rgba(0, 0, 0, .7);
+    outline-offset: 0.4rem;
+    border-radius: 0.25rem;
   }
 }
 
