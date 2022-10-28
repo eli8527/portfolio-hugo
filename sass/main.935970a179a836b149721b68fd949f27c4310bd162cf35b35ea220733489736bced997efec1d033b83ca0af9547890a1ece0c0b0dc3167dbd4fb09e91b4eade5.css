@@ -72,11 +72,9 @@ main {
   margin: 0 auto;
   max-width: var(--max-width); }
 
-h1 {
-  font-size: var(--typography--size--h1);
-  line-height: var(--line-height--heading); }
-
 header {
+  font-size: var(--typography--size--h1);
+  line-height: var(--line-height--heading);
   margin: var(--gutter) 0; }
   @media (min-width: 768px) {
     header {
