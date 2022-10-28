@@ -5,8 +5,12 @@
     <meta content="initial-scale=1,width=device-width,viewport-fit=cover" name="viewport" />
     {{- block "head" .}}{{ end -}}
     {{- $favicon := resources.Get "/icons/favicon.ico" -}}
-    <link href="{{$favicon.RelPermalink}}" rel="shortcut icon" sizes="64x64" type="image/x-icon" />
-    
+    <link href="{{$favicon.RelPermalink}}" rel="icon" sizes="64x64" type="image/x-icon" />
+    {{- $faviconSvg := resources.Get "/icons/favicon.svg" -}}
+    <link href="{{$faviconSvg.RelPermalink}}" rel="icon" type="image/svg+xml" />
+    {{- $touchIcon := resources.Get "/icons/touch.png" -}}
+		<link href="{{$touchIcon.RelPermalink}}" rel="apple-touch-icon" />
+
     <title>
       {{- block "title" . -}}
         {{ .Site.Title }}

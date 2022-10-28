@@ -9,9 +9,11 @@ i am a designer and software developer based in new york. i most recently worked
 
 here, you can eventually find a somewhat complete archive of my work. i am in the slow process of updating it. you can also find me on [e-mail](mailto:ericyoungli@gmail.com), [are.na](https://www.are.na/eric-li), [twitter](https://twitter.com/eli8527), and [instagram](https://www.instagram.com/eli8527/). -->
 
-# Eric Li is a designer and software engineer based in New York.
+# Eric Li is a designer and software engineer based in New&nbsp;York.
 
-I spent 3+ years as a Senior Product Designer and Developer at the [Museum of Modern Art](https://www.youtube.com/watch?v=DlrbBo9xYYU). I also teach interaction design and computer science at [RISD](http://source.f22.href.blue/) and [Parsons](https://js.f22.href.blue/), and am 1/2 of [Studio Ercan–Li](https://ercan-li.com/).
+I spent 3+ years as a Senior Product Designer and Developer at the [Museum of Modern Art](https://www.youtube.com/watch?v=DlrbBo9xYYU). I&nbsp;also teach interaction design and computer science at [RISD](http://source.f22.href.blue/) and [Parsons](https://js.f22.href.blue/), and am 1/2 of [<nobr>Ercan–Li</nobr>](https://ercan-li.com/).
+
+Prior to MoMA, I worked at <nobr>[O-R-G](https://o-r-g.com/)</nobr>, [Google&nbsp;Design](https://design.google/), [IDEO](https://ideo.com/), and [LUST](https://lust.nl/).
 
 Learn more about my work [here](https://cv.eric.young.li/). More soon.
 
