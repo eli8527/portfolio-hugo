@@ -1,0 +1,72 @@
+@import 'reset.scss';
+@import 'mixins.scss';
+
+:root {
+  --typography--size: 1.8rem;
+  --typography--size--h1: calc(var(--typography--size) * 2);
+
+  --line-height: 1.25;
+  --line-height--heading: 1.1;
+
+  --tracking: -0.1rem;
+
+  --gutter: 2.0rem;
+  --max-width: 102.4rem;
+
+  @include desktop {
+    --typography--size: 2.4rem;
+    --gutter: 4.0rem;
+  }
+}
+
+body {
+  font-size: var(--typography--size);
+  font-family: 'Arnhem';
+  letter-spacing: var(--tracking);
+  line-height: var(--line-height);
+  background-color: #FAFAFA;
+
+  margin: 0 var(--gutter);
+}
+
+main {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+h1 {
+  font-size: var(--typography--size--h1);
+  line-height: var(--line-height--heading);
+}
+
+header {
+  margin: var(--gutter) 0;
+
+  @include desktop {
+    margin: calc(6 * var(--gutter)) 0;
+  }
+}
+
+a {
+  color: #00F;
+  text-decoration-color:     var(--color);
+	text-decoration-line:      underline;
+	text-decoration-thickness: 0.07em;
+	text-underline-offset:     0.15em;
+
+  &:visited {
+    color: #00F;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p, ul {
+  margin-top: 1em;
+
+  &:first-child {
+    margin-top: unset;
+  }
+}

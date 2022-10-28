@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta content="initial-scale=1,width=device-width,viewport-fit=cover" name="viewport" />
-    <meta name="color-scheme" content="dark light">
     {{- block "head" .}}{{ end -}}
     {{- $favicon := resources.Get "/icons/favicon.ico" -}}
     <link href="{{$favicon.RelPermalink}}" rel="shortcut icon" sizes="64x64" type="image/x-icon" />
@@ -14,11 +13,9 @@
       {{- end -}}
     </title>
 
-    {{- $mainCss := resources.Get "/styles/main.css" -}}
+    {{ $sass := resources.Get "sass/main.scss" }}
+    {{ $mainCss := $sass | resources.ToCSS }}
     <link href="{{($mainCss | resources.Fingerprint "sha512").RelPermalink}}" rel="stylesheet" />
-
-    <!-- {{- $darkCss := resources.Get "/styles/dark.css" -}} -->
-    <!-- <link href="{{($darkCss | resources.Fingerprint "sha512").RelPermalink}}" rel="stylesheet" media="(prefers-color-scheme: dark)" /> -->
     
     {{- with .Site.Params.Ga }}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{.}}"></script>
@@ -39,15 +36,5 @@
     {{ block "footer" . }}
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ end }}
-    <aside>
-      <button onclick="toggleLayout()">&#10227;&#xFE0E;</button>
-      <script>
-        toggleLayout = () => {
-          document.body.classList.toggle('layout');
-        }
-      </script>
-    </aside>
-    <br>
-    <br>
   </body>
 </html>

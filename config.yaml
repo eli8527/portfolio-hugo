@@ -1,12 +1,12 @@
 baseURL: http://eric.young.li/
 languageCode: en-us
-title: eric li
+title: Eric Li
 
 params:
   ga: 'UA-57660834-7'
 
 permalinks:
-  works: /:title/
+  work: /:title/
 
 markup:
   goldmark:
