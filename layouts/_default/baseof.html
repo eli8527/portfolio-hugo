@@ -18,7 +18,8 @@
     </title>
 
     {{- block "opengraph" .}}
-      <meta content="/images/metadata.png" name="og:image" />
+      {{- $previewImage := resources.Get "/icons/preview.png" -}}
+      <meta content="{{$previewImage.RelPermalink}}" name="og:image" />
       <meta content="{{ .Site.Title }}" name="og:title" />
       <meta content="{{ .Site.Params.Tagline | htmlUnescape }}" name="og:description" />
       <meta content="{{ .Site.BaseURL }}" name="og:url" />
