@@ -11,7 +11,7 @@ here, you can eventually find a somewhat complete archive of my work. i am in th
 
 # Eric Li is a designer and software engineer based in New York.
 
-I spent 3+ years as a Senior Product Designer and Developer at the [Museum of Modern Art](https://www.moma.org/). I also teach interaction design and computer science at [RISD](http://source.f22.href.blue/) and [Parsons](https://js.f22.href.blue/), and am 1/2 of [Studio Ercan–Li](https://ercan-li.com/).
+I spent 3+ years as a Senior Product Designer and Developer at the [Museum of Modern Art](https://www.youtube.com/watch?v=DlrbBo9xYYU). I also teach interaction design and computer science at [RISD](http://source.f22.href.blue/) and [Parsons](https://js.f22.href.blue/), and am 1/2 of [Studio Ercan–Li](https://ercan-li.com/).
 
 Learn more about my work [here](https://cv.eric.young.li/). More soon.
 
