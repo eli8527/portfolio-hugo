@@ -25,10 +25,10 @@
     <section>
       <h2>ongoing projects</h2>
       <ul>
-        {{- range (sort (where (where .Site.RegularPages "Type" "works") "Params.ongoing" true) "File.Path").Reverse}}
+        {{- range (sort (where (where .Site.RegularPages "Type" "work") "Params.ongoing" true) "File.Path").Reverse}}
           <li>
               <p>
-                <span role="heading" aria-level="3">{{ .Title | markdownify}}</span> [<a href="#{{.Title | urlize}}">&darr;</a>] {{- partial "works/link-list.html" . -}}
+                <span role="heading" aria-level="3">{{ .Title | markdownify}}</span> [<a href="#{{.Title | urlize}}">&darr;</a>] {{- partial "work/link-list.html" . -}}
               </p>
           </li>
         {{ end -}}
@@ -37,7 +37,7 @@
     <section>
       <h2>chronology</h2>
       <dl>
-        {{- range (sort (where .Site.RegularPages "Type" "works") "File.Path").Reverse}}
+        {{- range (sort (where .Site.RegularPages "Type" "work") "File.Path").Reverse}}
           {{- $page := . -}}
           <dt id="{{.Title | urlize}}">
             <p>
@@ -47,7 +47,7 @@
           <dd>
             <p>
               {{ .Description | markdownify }}
-              {{- partial "works/link-list.html" . -}}
+              {{- partial "work/link-list.html" . -}}
             </p>
             
             {{- with .Params.Gallery }}
