@@ -17,6 +17,14 @@
       {{- end -}}
     </title>
 
+    {{- block "opengraph" .}}
+      <meta content="/images/metadata.png" name="og:image" />
+      <meta content="{{ .Site.Title }}" name="og:title" />
+      <meta content="{{ .Site.Params.Tagline | htmlUnescape }}" name="og:description" />
+      <meta content="{{ .Site.BaseURL }}" name="og:url" />
+      <meta content="website" name="og:type" />
+    {{end -}}
+
     {{ $sass := resources.Get "sass/main.scss" }}
     {{ $mainCss := $sass | resources.ToCSS }}
     <link href="{{($mainCss | resources.Fingerprint "sha512").RelPermalink}}" rel="stylesheet" />
