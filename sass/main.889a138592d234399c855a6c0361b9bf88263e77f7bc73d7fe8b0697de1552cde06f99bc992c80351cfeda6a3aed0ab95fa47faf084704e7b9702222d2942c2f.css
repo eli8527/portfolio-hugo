@@ -49,23 +49,23 @@ input {
   border-radius: 0; }
 
 :root {
-  --typography--size: 1.8rem;
-  --typography--size--h1: calc(var(--typography--size) * 1.5);
-  --line-height: 1.25;
-  --line-height--heading: 1.1;
+  --typography-size: 1.8rem;
+  --typography-size--h1: calc(var(--typography--size) * 1.5);
+  --leading: 1.25;
+  --leading--heading: 1.1;
   --tracking: -0.1rem;
   --gutter: 2.0rem;
   --max-width: 102.4rem; }
   @media (min-width: 768px) {
     :root {
-      --typography--size: 2.4rem;
-      --typography--size--h1: calc(var(--typography--size) * 2);
+      --typography-size: 2.4rem;
+      --typography-size--h1: calc(var(--typography-size) * 2);
       --gutter: 4.0rem; } }
 body {
-  font-size: var(--typography--size);
+  font-size: var(--typography-size);
   font-family: 'Arnhem';
   letter-spacing: var(--tracking);
-  line-height: var(--line-height);
+  line-height: var(--leading);
   background-color: #FAFAFA;
   margin: 0 var(--gutter); }
 
@@ -74,8 +74,10 @@ main {
   max-width: var(--max-width); }
 
 header {
-  font-size: var(--typography--size--h1);
-  line-height: var(--line-height--heading);
+  --leading: var(--leading--heading);
+  --typography-size: var(--typography-size--h1);
+  font-size: var(--typography-size);
+  line-height: var(--leading);
   margin: var(--gutter) 0; }
   @media (min-width: 768px) {
     header {
@@ -98,6 +100,6 @@ a {
     border-radius: 0.25rem; }
 
 p, ul {
-  margin-top: 1em; }
+  margin-top: calc(1em * var(--leading)); }
   p:first-child, ul:first-child {
     margin-top: unset; }
