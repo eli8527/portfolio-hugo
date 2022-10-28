@@ -4,7 +4,7 @@ title: Eric Li
 
 params:
   ga: 'UA-57660834-7'
-  tagline: Eric Li is a designer and software engineer based in New&nbsp;York.
+  tagline: Eric Li is a designer and software engineer based in New York.
 
 permalinks:
   work: /:title/
