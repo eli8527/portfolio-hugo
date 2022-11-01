@@ -11,6 +11,7 @@
     {{- $touchIcon := resources.Get "/icons/touch.png" -}}
 		<link href="{{$touchIcon.RelPermalink}}" rel="apple-touch-icon" />
 
+    <meta name="theme-color" content="#FAFAFA">
     <title>
       {{- block "title" . -}}
         {{ .Site.Title }}
@@ -27,7 +28,8 @@
     {{end -}}
 
     {{ $sass := resources.Get "sass/main.scss" }}
-    {{ $mainCss := $sass | resources.ToCSS }}
+    {{ $options := (dict "enableSourceMap" (not hugo.IsProduction) "transpiler" "dartsass") }}
+    {{ $mainCss := $sass | resources.ToCSS $options}}
     <link href="{{($mainCss | resources.Fingerprint "sha512").RelPermalink}}" rel="stylesheet" />
     
     {{- with .Site.Params.Ga }}
@@ -41,7 +43,7 @@
       </script>
     {{end -}}
   </head>
-  <body>
+  <body {{ block "bodyMeta" .}}{{end}}>
     <!-- Code that all your templates share, like a header -->
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->

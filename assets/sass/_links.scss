@@ -1,0 +1,23 @@
+@use 'fonts';
+@use 'typography';
+
+a {
+  color: var(--color--link, var(--color--blue));
+  @extend %font--underline;
+
+  &:visited {
+    color: var(--color--link, var(--color--blue));
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    @extend %type--layout;
+    
+    outline: calc(var(--typography--underline) * 2em) solid rgba(0, 0, 0, .7);
+    outline-offset: calc(var(--typography--underline--shift) * -1em);
+    border-radius: 0.25rem;
+  }
+}

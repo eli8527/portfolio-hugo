@@ -1,0 +1,33 @@
+@use 'fonts';
+@use 'typography';
+
+%constrain-width {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+body {
+  background-color: var(--color--white);
+}
+
+main {
+  padding: var(--gutter);
+  background-color: var(--color--white);
+  display: flex;
+  flex-direction: column;
+  gap: calc(2 * var(--gutter));
+  min-height: 100vh;
+
+  @supports(height: 100dvh) {
+    min-height: 100lvh;
+  }
+
+  > section:last-of-type {
+    margin-top: auto;
+  }
+}
+
+section {
+  @extend %constrain-width;
+}

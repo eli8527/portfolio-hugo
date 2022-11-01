@@ -3,24 +3,24 @@
 {{end}}
 
 {{ define "main" }}
-    <main>
-      <header>
-        <h1>{{.Title | markdownify}}</h1>
-      </header>
-      <section>
-        {{- if .Content}}
-          {{.Content}}
-        {{else}}
-          <p>
-            {{.Description | markdownify}}
-          </p>
-        {{ end -}}
-      </section>
-    </main>
+  <main>
+    <header>
+      <h1>{{.Title | markdownify}}</h1>
+    </header>
+    <section>
+      {{- if .Content}}
+        {{.Content}}
+      {{else}}
+        <p>
+          {{.Description | markdownify}}
+        </p>
+      {{ end -}}
+    </section>
+  </main>
 {{ end }}
 
 {{define "footer"}}
   <footer>
-
+    <p>Site last updated on {{ now.Format "Mon, Jan 2, 2006"}}.</p>
   </footer>
 {{end}}

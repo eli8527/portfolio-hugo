@@ -1,0 +1,19 @@
+<nav>
+  <p>
+    <a href="{{.Site.BaseURL}}" class="no-underline">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="sprite--circle">
+      <circle cx="50" cy="50" r="50" />
+      </svg>
+      <span class="nav__name">Eric Li</span>
+    </a>
+  </p>
+  <ul>
+  {{ range .Site.Menus.main }}
+    <p>
+      <a href="{{ .URL }}" title="{{ .Title }}" class="no-underline">
+        {{- .Name -}}
+      </a>
+    </p>
+  {{ end }}
+  </ul>
+</nav>

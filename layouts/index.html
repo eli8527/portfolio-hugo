@@ -1,15 +1,58 @@
+{{define "bodyMeta"}}class="home"{{end}}
 {{ define "main" }}
+  <header>
+    <div>
+      <section>
+        <article>
+          {{- with .Site.Params.Tagline }}
+            <h1>{{. | safeHTML}}</h1>
+          {{end -}}
+          {{.Content}}
+        </article>
+      </section>
+    </div>
+    <div>
+      <section>
+        {{ partial "footer.html" . }}
+      </section>
+    </div>
+  </header>
   <main>
-    <header>
-      {{- with .Site.Params.Tagline }}
-        <h1>{{. | safeHTML}}</h1>
-      {{end -}}
-      {{.Content}}
-    </header>
+    {{ partial "nav.html" . }}
+    <section>
+      <h2><p>Work</p></h2>
+      <ul>
+        <li>Hello</li>
+      </ul>
+    </section>
   </main>
 {{ end }}
+
 {{define "footer"}}
-  <footer>
-    <!-- <small>site last updated {{ now.Format "Mon, Jan 2, 2006, 15:04:05 MST"}}. this site is always a work in progress.</small> -->
-  </footer>
+  <script>
+    const cardColor = getComputedStyle(document.querySelector('header')).backgroundColor;
+    const mainColor = getComputedStyle(document.querySelector('main')).backgroundColor;
+
+    const renderThemeColor = () => {
+      let themeColor = mainColor;
+      if (document.querySelector('main').getBoundingClientRect().top > 0) {
+        themeColor = cardColor;
+      }
+      document.querySelector('meta[name="theme-color"]').setAttribute('content',  themeColor);
+    }
+
+    const renderPage = () => {
+      if (document.querySelector('main').getBoundingClientRect().top > 0) {
+        document.querySelector('header').classList.remove('show-footer');
+      } else {
+        document.querySelector('header').classList.add('show-footer');
+      }
+    }
+
+    window.addEventListener('scroll', renderThemeColor);
+    window.addEventListener('scroll', renderPage);
+
+    renderPage();
+    renderThemeColor();
+  </script>
 {{end}}

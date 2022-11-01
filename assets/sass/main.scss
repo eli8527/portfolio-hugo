@@ -1,84 +1,75 @@
-@import 'reset.scss';
-@import 'mixins.scss';
-@import '/fonts/stylesheet.css';
+@use 'reset';
+@use 'mixins' as *;
+@use 'fonts';
+@use 'typography';
+@use 'links';
+
+@use 'layout';
+@use 'markdown';
+@use 'nav';
+@use 'home';
+@use 'about';
 
 :root {
-  --typography-size: 1.8rem;
-  --typography-size--h1: calc(var(--typography-size) * 1.5);
+  @extend %font--haas;
 
-  --leading: 1.25;
-  --leading--heading: 1.1;
+  --typography--leading: 1.25;
+  --typography--leading--heading: 1.1;
 
-  --tracking: -0.1rem;
+  --typography--size: 1.6rem;
+  --typography--size--card: calc(var(--typography--size) * 1.5);
+  --typography--size--h1: calc(var(--typography--size) * 2);
+  --typography--size--h2: calc(var(--typography--size) * 1.375);
+  --typography--size--caption: calc(var(--typography--size) * 0.875);
 
   --gutter: 2.0rem;
   --max-width: 102.4rem;
 
+  --color--white: #FAFAFA;
+  --color--blue: #00F;
+
+  --transition: 500ms all;
+
+  @include tiny {
+    --typography--size--card: calc(var(--typography--size) * 1.375);
+  }
+
   @include desktop {
-    --typography-size: 2.4rem;
-    --typography-size--h1: calc(var(--typography-size) * 2);
+    --typography--size: 1.8rem;
+    --typography--size--card: calc(var(--typography--size) * 2.5);
+    --typography--size--h1: calc(var(--typography--size) * 3);
+    --typography--size--h2: calc(var(--typography--size) * 2);
+
     --gutter: 4.0rem;
   }
 }
 
-body {
-  font-size: var(--typography-size);
-  font-family: 'Arnhem';
-  letter-spacing: var(--tracking);
-  line-height: var(--leading);
-  background-color: #FAFAFA;
+h1,
+h2 {
+  @extend %font--arnhem;
+  
+  --typography--leading: var(--typography--leading--heading);
 
-  margin: 0 var(--gutter);
+  scroll-margin-top: calc(var(--margin--vertical--2) + var(--typography--size--base) * var(--typography--cap-height) * 3);
 }
 
-main {
-  margin: 0 auto;
-  max-width: var(--max-width);
+h1 {
+  --typography--size: var(--typography--size--h1) ;
 }
 
-header {
-  --leading: var(--leading--heading);
-  --typography-size: var(--typography-size--h1);
-
-  font-size: var(--typography-size);
-  line-height: var(--leading);
-  margin: var(--gutter) 0;
-
-  @include desktop {
-    margin: calc(6 * var(--gutter)) 0;
-  }
+h2 { 
+  --typography--size: var(--typography--size--h2);
 }
 
-a {
-  color: #00F;
-  text-decoration-color:     var(--color);
-	text-decoration-line:      underline;
-	text-decoration-thickness: 0.07em;
-	text-underline-offset:     0.15em;
 
-  &.no-underline {
-    text-decoration: none;
-  }
 
-  &:visited {
-    color: #00F;
-  }
+figure {
+  @extend %type--layout;
 
-  &:hover {
-    text-decoration: none;
-  }
+  --typography--size: var(--typography--size--caption);
 
-  &:focus-visible {
-    outline: 0.3rem solid rgba(0, 0, 0, .7);
-    outline-offset: 0.4rem;
-    border-radius: 0.25rem;
-  }
-}
-
-p, ul {
-  margin-top: calc(1em * var(--leading));
-
-  &:first-child {
-    margin-top: unset;
-  }
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: var(--typography--cap);  
 }
