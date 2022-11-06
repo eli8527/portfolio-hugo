@@ -23,8 +23,8 @@ svg.sprite--arrow {
     transform: rotate(-45deg);
   }
 
-  a > & {
-    // margin-left: calc(0.25 * var(--typography--cap));
+  a & {
+    margin-left: calc(0.25 * var(--typography--cap));
   }
 }
 
