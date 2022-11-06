@@ -14,5 +14,5 @@ previewImages:
   - src: BR_Feb-Critics Spreads_09.jpg
   - src: BR_Feb-Critics Spreads_10.jpg
   - src: BR_Feb-Critics Spreads_11.jpg
-description: I designed the critic's page for the Feb 2022 issue of the *Brookyln Rail*, curated by Ruth Fine. Following a rigid column structure where type and image are treated as equal objects, the layouts are outlined by a black border to signify the page as object. the border also serves as an inking pad for readers to make their own “found” prints, with the printed issue as their medium.
+description: I designed the critic's page for the Feb 2022 issue of the *Brooklyn Rail*, curated by Ruth Fine. Following a rigid column structure where type and image are treated as equal objects, the layouts are outlined by a black border to signify the page as object. the border also serves as an inking pad for readers to make their own “found” prints, with the printed issue as their medium.
 ---
