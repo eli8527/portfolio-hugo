@@ -737,6 +737,9 @@ figure {
   flex-direction: column;
   gap: var(--typography--cap);
 }
+figure img {
+  max-height: 70vh;
+}
 
 div.image-mat {
   width: 100%;
