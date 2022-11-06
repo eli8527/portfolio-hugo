@@ -343,6 +343,10 @@ svg.sprite--arrow {
 svg.sprite--arrow.upper-right {
   transform: rotate(-45deg);
 }
+a svg.sprite--arrow {
+  margin-left: calc(0.25 * var(--typography--cap));
+}
+
 a:has(svg) nobr {
   white-space: nowrap;
 }
