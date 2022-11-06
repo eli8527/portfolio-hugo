@@ -1,10 +1,9 @@
 ---
 title: |
   Orchard Analytics
-ongoing: false
-years: May 2022
-links:
-  - www: https://www.orchardanalytics.co/
+ongoing: true
+years: Ongoing
+link: https://www.orchardanalytics.co/
 description: >
-  created a brand identity and designed/built a website for orchard, a data analytics consultancy for start ups.
+  Brand identity and designed/build of a website for Orchard, a data analytics consultancy for start ups. Ongoing product design and strategy consulting for their B2B MMM product.
 ---

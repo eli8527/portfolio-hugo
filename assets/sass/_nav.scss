@@ -23,14 +23,6 @@ nav {
       margin: unset;
     }
   }
-
-  svg.sprite--circle {
-    @extend %type--layout;
-
-    width: var(--typography--cap);
-    height: var(--typography--cap);
-    fill: var(--color--blue);
-  }
   
   ul {
     margin: unset;

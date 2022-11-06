@@ -15,8 +15,8 @@ body.about {
     row-gap: calc(var(--typography--between) + var(--typography--line-height));
 
     @include desktop {
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-      grid-template-areas: "about portrait";
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+      grid-template-areas: "portrait about";
     }
 
     article {
@@ -33,6 +33,10 @@ body.about {
 
       img {
         max-height: 50vh;
+        
+        @include desktop {
+          max-height: unset;
+        }
       }
     }
   }

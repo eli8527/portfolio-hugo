@@ -19,7 +19,7 @@ main {
   gap: calc(2 * var(--gutter));
   min-height: 100vh;
 
-  @supports(height: 100dvh) {
+  @supports(height: 100lvh) {
     min-height: 100lvh;
   }
 

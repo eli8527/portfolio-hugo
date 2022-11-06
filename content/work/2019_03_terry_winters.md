@@ -2,6 +2,6 @@
 title: "*Terry Winters: New Work*"
 ongoing: false
 years: 2019
-links:
-description: a [book](https://muellermodern.com/publications/8/) for terry winters, designed while working with miko mcginty. for tobias mueller modern art in zurich.
+link: https://muellermodern.com/publications/8/
+description: A book for Terry Winters, designed with Miko McGinty. For Tobias Mueller Modern Art in Zurich.
 ---

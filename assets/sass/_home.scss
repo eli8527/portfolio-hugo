@@ -1,13 +1,14 @@
 @use 'fonts';
 @use 'typography';
+@use 'mixins' as *;
 
 :root {
   --card--main--height: 80vh;
   --card--footer--height: 10vh;
 
   @supports(height: 100svh) {
-    --card--main--height: 80dvh;
-    --card--footer--height: 10dvh;
+    --card--main--height: 80svh;
+    --card--footer--height: 10svh;
   }
 }
 
@@ -75,10 +76,89 @@ body.home {
   main {
     margin-top: var(--card--main--height);
     margin-bottom: var(--card--footer--height);
-    min-height: 200vh;
 
     > section:last-child {
       margin-top: unset;
+    }
+
+    .chronology {
+      display: flex;
+      flex-direction: column;
+      gap: calc(2 * var(--gutter));
+
+      dl {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        
+        @include desktop {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        }
+        
+        dt {
+          padding-top: calc(1 * var(--gutter));
+          border-top: 1px solid black;
+          display: grid;
+          gap: var(--gutter);
+          grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+
+          @include desktop {
+            padding-top: calc(0.5 * var(--gutter));
+            padding-bottom: calc(0.5 * var(--gutter));
+
+            &:last-of-type {
+              border-bottom: 1px solid black;
+            }
+          }
+        }
+
+        dd {
+          padding-top: calc(1 * var(--gutter));
+          padding-bottom: calc(1 * var(--gutter));
+
+          &:last-of-type {
+            border-bottom: 1px solid black;
+          }
+          
+          @include desktop {
+            padding-top: calc(0.5 * var(--gutter));
+            padding-bottom: calc(0.5 * var(--gutter));
+          
+            border-top: 1px solid black;
+            padding-left: var(--gutter);
+          }
+        }
+
+        dd + dd {
+          border-top: none;
+          padding-left: unset;
+          padding-top: unset;
+
+          @include desktop {
+            grid-column: span 2;
+          }
+          
+          ul {
+            display: flex;
+            gap: calc(0.5 * var(--gutter));
+            overflow-x: scroll;
+            overflow-y: hidden;
+            
+            li {
+              flex-shrink: 0;
+              height: calc(8 * var(--gutter));
+
+              &.screenshot {
+                aspect-ratio: 4/3;
+              }
+
+              > img {
+                height: 100%;
+                width: auto;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

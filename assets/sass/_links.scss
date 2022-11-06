@@ -2,8 +2,10 @@
 @use 'typography';
 
 a {
-  color: var(--color--link, var(--color--blue));
   @extend %font--underline;
+
+  color: var(--color--link, var(--color--blue));
+  display: inline-block;
 
   &:visited {
     color: var(--color--link, var(--color--blue));

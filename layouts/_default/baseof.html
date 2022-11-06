@@ -19,13 +19,13 @@
     </title>
 
     {{- block "opengraph" .}}
-      {{- $previewImage := resources.Get "/icons/preview.png" -}}
-      <meta content="{{$previewImage.RelPermalink}}" name="og:image" />
-      <meta content="{{ .Site.Title }}" name="og:title" />
-      <meta content="{{ .Site.Params.Tagline | htmlUnescape }}" name="og:description" />
-      <meta content="{{ .Site.BaseURL }}" name="og:url" />
-      <meta content="website" name="og:type" />
+      <meta content="{{block "og:image" . }}{{(resources.Get "/icons/preview.png").RelPermalink}}{{end}}" name="og:image" />
+      <meta content="{{block "og:title" .}}{{- .Site.Title -}}{{end}}" name="og:title" />
+      <meta content="{{block "og:description" . }}{{ htmlUnescape .Site.Params.Tagline | safeHTML }}{{end}}" name="og:description" />
     {{end -}}
+
+    <meta content="{{ .Site.BaseURL }}" name="og:url" />
+    <meta content="website" name="og:type" />
 
     {{ $sass := resources.Get "sass/main.scss" }}
     {{ $options := (dict "enableSourceMap" (not hugo.IsProduction) "transpiler" "dartsass") }}
