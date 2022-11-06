@@ -22,7 +22,7 @@
     <section class="chronology">
       <!-- <h2 id="chronology">Chronology</h2> -->
       {{partial "heading-anchor.html" "Chronology"}}
-      {{- $pages := (sort (where .Site.RegularPages "Type" "work") "File.Path").Reverse -}}
+      {{- $pages := (sort (where .Site.RegularPages "Type" "chronology") "File.Path").Reverse -}}
       {{- partial "work/list.html" (where $pages "Params.Ongoing" true) -}}
       {{- partial "work/list.html" (where $pages "Params.Ongoing" false) -}}
     </section>

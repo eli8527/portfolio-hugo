@@ -94,6 +94,10 @@ figure {
   align-items: start;
   flex-direction: column;
   gap: var(--typography--cap);  
+  
+  img {
+    max-height: 70vh;
+  }
 }
 
 div.image-mat {

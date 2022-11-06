@@ -9,6 +9,10 @@ params:
 permalinks:
   work: /:title/
 
+disableKinds:
+  - "taxonomy"
+  - "term"
+  - "RSS"
 markup:
   goldmark:
     renderer:

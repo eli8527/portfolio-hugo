@@ -1,18 +1,45 @@
+{{define "bodyMeta"}}class="about"{{end}}
+
+{{define "title"}}
+  {{.Title | markdownify | plainify}} — {{ .Site.Title }}
+{{end}}
+
+{{define "og:title"}}
+  {{- .Title | markdownify | plainify}} — {{ .Site.Title -}}
+{{end}}
+
+{{define "og:description"}}
+  {{- .Content | plainify | truncate 250 -}}
+{{end}}
+
 {{ define "main" }}
   <main>
-    <header>
-      <h1>{{.Title}}</h1>
-    </header>
-    <p>
-      unfortunately, you’ve reached the end of the <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">internet</a>.
-    </p>
+    {{ partial "nav.html" . }}
+    <section>
+      <header>
+        <h1>{{.Title | markdownify}}</h1>
+      </header>
+    </section>
+    <section>
+      <article>
+        <p>
+          Unfortunately, you’ve reached the end of the <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">internet</a>. How about a nice <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418">cup of tea</a>?
+        </p>
+        <figure>
+          {{- $image := resources.Get "/images/418.jpg" -}}
+          <img src="{{($image.Resize "1216x").RelPermalink}}" alt="{{.Page.Params.Profile.Alt}}">
+          <p>
+            Ettore Sottsass. <em>Study for Tea Pot, project (Perspective)</em>. <nobr>1973</nobr>  
+          </p>
+        </figure>
+      </article>
+    </section>
+    <section>
+      {{ partial "footer.html" . }}
+    </section>
   </main>
 {{ end }}
+
 {{define "footer"}}
-  <footer>
-    <hr>
-    <p>
-      <a href="/">&#8617;</a>
-    </p>
-  </footer>
+  
 {{end}}
