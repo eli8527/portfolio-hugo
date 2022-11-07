@@ -19,7 +19,7 @@
     </title>
 
     {{- block "opengraph" .}}
-      <meta content="{{block "og:image" . }}{{(resources.Get "/icons/preview.png").RelPermalink}}{{end}}" name="og:image" />
+      <meta content="{{block "og:image" . }}{{(resources.Get "/icons/preview.png").Permalink}}{{end}}" name="og:image" />
       <meta content="{{block "og:title" .}}{{- .Site.Title -}}{{end}}" name="og:title" />
       <meta content="{{block "og:description" . }}{{ htmlUnescape .Site.Params.Tagline | safeHTML }}{{end}}" name="og:description" />
     {{end -}}

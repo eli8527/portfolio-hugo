@@ -10,6 +10,7 @@
 @use 'nav';
 @use 'home';
 @use 'about';
+@use 'work';
 
 :root {
   @extend %font--haas;
@@ -71,15 +72,22 @@ h2[id] {
   padding-top: calc(1 * var(--gutter));
   width: fit-content;
 
+  &[aria-label="MoMA logo"] {
+    display: flex;
+    align-items: center;
+    height: var(--typography--cap);
+  }
+
   &:hover {
     a {
-      display: inline-block;
+      visibility: visible;
     }
   }
 
   a {
     margin-left: 0.5ch;
-    display: none;
+    display: inline-block;
+    visibility: hidden
   }
 }
 
@@ -95,7 +103,7 @@ figure {
   flex-direction: column;
   gap: var(--typography--cap);  
   
-  img {
+  img, video {
     max-height: 70vh;
   }
 }
@@ -104,13 +112,17 @@ div.image-mat {
   width: 100%;
   height: 100%;
   background-color: var(--mat-color, var(--color--gray));
-  padding: calc(0.5 * var(--gutter));
+  padding: calc(1 * var(--gutter));
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 
-  img {
+  img, video {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  video {
+    border-radius: 1% / 1.5%;
   }
 }

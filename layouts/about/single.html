@@ -25,11 +25,8 @@
         {{.Content}}
         <p>Site last updated on {{ now.Format "Mon, Jan 2, 2006"}}.</p>
       </article>
-      <figure>
-        {{- $image := .Resources.GetMatch .Page.Params.Profile.Src -}}
-        <img src="{{($image.Resize "1216x").RelPermalink}}" alt="{{.Page.Params.Profile.Alt}}">
-        <p>{{.Page.Params.Profile.Credit | markdownify}}</p>
-      </figure>
+      {{- $image := .Resources.GetMatch .Page.Params.Profile.Src -}}
+      {{partial "figure.html" (dict "Image" ($image.Resize "1216x") "Title" .Page.Params.Profile.Alt "Caption" (.Page.Params.Profile.Credit | markdownify)) }}
     </section>
     <section>
       {{ partial "footer.html" . }}

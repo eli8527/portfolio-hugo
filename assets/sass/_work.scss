@@ -1,0 +1,16 @@
+@use 'fonts';
+@use 'typography';
+@use 'mixins' as *;
+
+body.work {
+  .hero {
+    display: flex;
+    justify-content: center;
+    
+    figure {
+      img, video {
+        // max-height: 80vh;
+      }
+    }
+  }
+}

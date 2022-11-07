@@ -1,0 +1,13 @@
+{{- $work := . -}}
+{{- with .Params.Links -}}
+  {{- $len := len . -}}
+  {{- $idx := 0 -}}
+  &nbsp;[
+  {{- range . -}}
+    {{- $idx = add $idx 1 -}}
+    {{- range $k, $v := . -}}
+      <a href="{{if eq $v "self"}}{{$work.RelPermalink}}{{else}}{{$v}}{{end}}">{{$k}}</a>{{if lt $idx $len}}, {{end -}}
+    {{- end -}}
+  {{- end -}}
+  ]
+{{- end -}}

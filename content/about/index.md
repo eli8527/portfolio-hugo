@@ -12,7 +12,7 @@ Hi, I’m Eric — I’m a designer and software engineer with 7+ years of exper
 
 I spent 3+ years as a Senior Product Designer and Developer at the [Museum of Modern&nbsp;Art](https://www.moma.org/), where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. Prior to MoMA, I worked at <nobr>[O-R-G](https://o-r-g.com/)</nobr>, [Google&nbsp;Design](https://design.google/), [IDEO](https://ideo.com/), and [LUST](https://lust.nl/).
 
-I also teach interaction design and computer science as a faculty member in the design programs at [RISD](http://source.f22.href.blue/) and [Parsons](https://js.f22.href.blue/), finally solving the age old question of whether designers should code. I frequently collaborate on projects with [Nazlı&nbsp;Ercan](https://nazli-ercan.com/) under the name [<nobr>Ercan–Li</nobr>](https://ercan-li.com/), as well as [Michael&nbsp;Fehrenbach](https://michaelfehrenbach.com/).
+I also teach interaction design and computer science as a faculty member in the design programs at [RISD](http://source.f22.href.blue/) and [Parsons](https://js.f22.href.blue/), finally solving the age old question of whether designers should code. I frequently collaborate on projects with [Nazlı&nbsp;Ercan](https://nazli-ercan.com/) under the name [<nobr>Ercan–Li</nobr>](https://ercan-li.com/), as well as with [Michael&nbsp;Fehrenbach](https://michaelfehrenbach.com/).
 
 I graduated with a B.S.E. in computer science and visual arts from Princeton, where I was the 2018 recipient of the Jim Seawright Award in Visual Arts. I&nbsp;have been an invited guest to Princeton, Yale, NYU, SVA, TCNJ, Pratt, CCA, and&nbsp;UPenn. 
 

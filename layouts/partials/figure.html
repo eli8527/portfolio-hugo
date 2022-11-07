@@ -1,0 +1,18 @@
+<figure>
+  {{- if .IsScreenshot }}
+    <div class="image-mat" {{with .MatColor }}style="--mat-color: {{. | safeCSS}};"{{end}}>
+  {{end -}}
+  {{- if .Video}}
+    <video src="{{.Video.RelPermalink}}" autoplay muted loop playsinline></video>
+  {{else}}
+    <img src="{{.Image.RelPermalink}}" {{with .Title}}alt="{{.}}"{{end}}/>
+  {{end -}}
+  {{- if .IsScreenshot }}
+    </div>
+  {{end -}}
+  {{- with .Caption}}
+    <figcaption>
+      <p>{{. | safeHTML}}</p>
+    </figcaption>
+  {{end -}}
+</figure>

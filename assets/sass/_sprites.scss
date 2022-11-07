@@ -28,6 +28,12 @@ svg.sprite--arrow {
   }
 }
 
+svg.sprite--moma {
+  @extend %type--layout;
+
+  height: calc(1.5 * var(--typography--cap)); 
+}
+
 a:has(svg) nobr {
   white-space: nowrap;
 }

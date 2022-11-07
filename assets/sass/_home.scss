@@ -76,9 +76,65 @@ body.home {
   main {
     margin-top: var(--card--main--height);
     margin-bottom: var(--card--footer--height);
+    gap: calc(4 * var(--gutter));
 
     > section:last-child {
       margin-top: unset;
+    }
+
+    .work {
+      @extend %type--layout;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: var(--gutter);
+
+      &__list {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--gutter);
+        
+        @include desktop {
+          grid-template-columns: repeat(var(--grid, 2), minmax(0, 1fr));
+        }
+
+        li {
+          @extend %type--layout;          
+
+          @include desktop {
+            grid-column: span var(--span, 1);
+          }
+          a {
+            color: currentColor;
+            display: grid;
+            gap: calc(0.5 * var(--gutter));
+            grid-template-rows: fit-content 1fr;
+
+            > figure {
+              aspect-ratio: 3/2;
+
+              > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+
+              > div > img {
+                max-width: 100%;
+                max-height: 100%;
+              }
+            }
+          }
+
+          h3 {
+            color: var(--color--blue);
+          }
+
+          h3 + p {
+            margin-top: var(--typography--between);
+          }
+        }
+      }
     }
 
     .chronology {
@@ -145,15 +201,15 @@ body.home {
             
             li {
               flex-shrink: 0;
-              height: calc(8 * var(--gutter));
+              height: calc(7 * var(--gutter));
 
-              &.screenshot {
-                aspect-ratio: 4/3;
-              }
-
-              > img {
+              > figure {
                 height: 100%;
-                width: auto;
+                
+                img {
+                  height: 100%;
+                  width: auto;
+                }
               }
             }
           }

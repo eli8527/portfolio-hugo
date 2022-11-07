@@ -22,4 +22,8 @@ a {
     outline-offset: calc(var(--typography--underline--shift) * -1em);
     border-radius: 0.25rem;
   }
+
+  &:has(img, video):focus-visible {
+    outline-offset: calc(0.5 * var(--typography--cap));
+  }
 }

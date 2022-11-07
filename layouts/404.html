@@ -1,4 +1,4 @@
-{{define "bodyMeta"}}class="about"{{end}}
+{{define "bodyMeta"}}class="404"{{end}}
 
 {{define "title"}}
   {{.Title | markdownify | plainify}} — {{ .Site.Title }}
@@ -25,13 +25,8 @@
         <p>
           Unfortunately, you’ve reached the end of the <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">internet</a>. How about a nice <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418">cup of tea</a>?
         </p>
-        <figure>
-          {{- $image := resources.Get "/images/418.jpg" -}}
-          <img src="{{($image.Resize "1216x").RelPermalink}}" alt="{{.Page.Params.Profile.Alt}}">
-          <p>
-            Ettore Sottsass. <em>Study for Tea Pot, project (Perspective)</em>. <nobr>1973</nobr>  
-          </p>
-        </figure>
+        {{- $image := resources.Get "/images/418.jpg" -}}
+        {{partial "figure.html" (dict "Image" ($image.Resize "1216x") "Title" "Ettore Sottsass. Study for Tea Pot, project (Perspective). 1973" "Caption" "Ettore Sottsass. <em>Study for Tea Pot, project (Perspective)</em>. <nobr>1973</nobr>") }}
       </article>
     </section>
     <section>

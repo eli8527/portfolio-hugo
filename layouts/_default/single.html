@@ -1,26 +1,45 @@
+{{define "bodyMeta"}}class="work"{{end}}
+
 {{define "title"}}
-  {{.Title | markdownify | plainify}} | {{ .Site.Title }}
+  {{.Title | markdownify | plainify}} — {{ .Site.Title }}
 {{end}}
+
+{{define "og:title"}}
+  {{- .Title | markdownify | plainify}} — {{ .Site.Title -}}
+{{end}}
+
+{{define "og:image"}}
+  {{((.Resources.Get .Params.Preview.image).Resize "2000x").Permalink}}
+{{end}}
+
 
 {{ define "main" }}
   <main>
-    <header>
-      <h1>{{.Title | markdownify}}</h1>
-    </header>
+    {{ partial "nav.html" . }}
     <section>
-      {{- if .Content}}
+      <header>
+        <h1>{{.Title | markdownify}}</h1>
+      </header>
+    </section>
+    <div class="hero">
+      {{- $page := . -}}
+      {{- with .Params.Hero}}
+        {{- if .video}}
+          {{- $media := $page.Resources.GetMatch .video -}}
+          {{partial "figure.html" (dict "Video" $media "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "Caption" .caption) }}
+        {{else}}
+          {{- $media := $page.Resources.GetMatch .image -}}
+          {{partial "figure.html" (dict "Image" ($media.Resize "1100x") "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "Caption" .caption) }}
+        {{end -}}
+      {{end -}}
+    </div>
+    <section>
+      <article>
         {{.Content}}
-      {{else}}
-        <p>
-          {{.Description | markdownify}}
-        </p>
-      {{ end -}}
+      </article>
+    </section>
+    <section>
+      {{ partial "footer.html" . }}
     </section>
   </main>
 {{ end }}
-
-{{define "footer"}}
-  <footer>
-    <p>Site last updated on {{ now.Format "Mon, Jan 2, 2006"}}.</p>
-  </footer>
-{{end}}
