@@ -1,0 +1,82 @@
+@use 'typography';
+
+figure {
+  @extend %type--layout;
+
+  --typography--size: var(--typography--size--caption);
+
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: var(--typography--cap);  
+
+  button {
+    width: 100%;
+    height: 100%;
+  }
+
+  img, video {
+    max-height: 70vh;
+    width: auto;
+  }
+}
+
+div.image-mat {
+  width: 100%;
+  height: 100%;
+  background-color: var(--mat-color, #eee);
+  padding: calc(1 * var(--gutter));
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:not(.plain) {
+    img, video {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 1% / 1.5%;
+    }
+  }
+}
+
+.lightbox {
+  z-index: 2;
+  --margin--top: 0;
+  background-color: var(--color--white);
+  position: fixed;
+  inset: 0;
+  color: var(--color--black);
+  padding: calc(2 * var(--gutter));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__close {
+    position: absolute;
+    top: var(--gutter);
+    right: var(--gutter);
+  }
+  div.image-mat {
+    max-width: 100%;
+    max-height: 100%;
+    width: unset;
+    height: unset;
+    aspect-ratio: 3/2;
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  
+  > img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+  
+}

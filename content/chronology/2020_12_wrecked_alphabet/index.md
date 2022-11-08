@@ -12,5 +12,5 @@ links:
 #   - src: view2.jpg
 #   - src: view3.jpg
 description: >
-  An exhibition organized with [Joe Scanlan](https://joescanlan.biz/) at the Broodthaers Society of America, WRECKED ALPHABET brings together over forty artists, graphic designers, musicians, and writers whose work engages the alphabet. My essay on Marcel Broodthaers, *On Des!!!gn*, was featured in this show.
+  Curated an exhibition at the Broodthaers Society of America, *WRECKED ALPHABET* brought together over forty artists, graphic designers, musicians, and writers whose work engages the alphabet. My essay on Marcel Broodthaers, *On Des!!!gn*, was also featured in this show. Organized with [Joe Scanlan](https://joescanlan.biz/).
 ---

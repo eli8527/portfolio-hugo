@@ -1,0 +1,30 @@
+{{- $isScreenshot := false -}}
+{{- if .Get "screenshot" }}
+  {{- if eq (.Get "screenshot") "true"}}
+    {{$isScreenshot = true}}
+  {{end -}}
+{{end -}}
+{{- $disableInteraction := false -}}
+{{- if .Get "disable-interaction" }}
+  {{- if eq (.Get "disable-interaction") "true"}}
+    {{$disableInteraction = true}}
+  {{end -}}
+{{end -}}
+<single-figure
+  additional-classes="{{.Get "class" | safeCSS}}"
+  is-screenshot="{{ $isScreenshot }}"
+  disable-interaction="{{ $disableInteraction }}"
+  mat="{{.Get "mat"}}"
+  title="{{.Get "title"}}"
+  caption="{{.Get "caption" | markdownify | safeCSS}}"
+  {{ if .Get "video" }}
+    is-video="true"
+    src="{{.Get "src"}}"
+  {{ else }}
+    {{- $original := (.Page.Resources.ByType "image").GetMatch (printf "*%s" (.Get "src")) -}}
+    {{- $resized := ($original.Resize "2000x") -}}
+    src="{{$resized.RelPermalink }}"
+    width="{{$resized.Width}}" 
+    height="{{$resized.Height}}"
+  {{ end }}
+></single-figure>

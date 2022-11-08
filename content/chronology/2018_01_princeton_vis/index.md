@@ -22,5 +22,5 @@ previewImages:
   - src: vis.png
     title: vis logo
 description: >
-  I was the designer for the Visual Arts Program at Princeton. Besides introducing an identity for *vis*, I worked with students to use the program’s visual output as a medium for their practice, culminating in an annual thesis book titled *Princeton Visual Arts*.
+  Identity, digital, and collateral design for the Visual Arts Program at Princeton. Besides introducing an identity for *vis*, worked with students to use the program’s visual output as a medium for their practice, culminating in an annual thesis book titled *Princeton Visual Arts*.
 ---

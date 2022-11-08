@@ -31,6 +31,9 @@
     {{ $options := (dict "enableSourceMap" (not hugo.IsProduction) "transpiler" "dartsass") }}
     {{ $mainCss := $sass | resources.ToCSS $options}}
     <link href="{{($mainCss | resources.Fingerprint "sha512").RelPermalink}}" rel="stylesheet" />
+
+    {{- $js := resources.Get "scripts/main.js" | js.Build -}}
+    <script type="module" src="{{($js | resources.Fingerprint "sha512").RelPermalink}}"></script>
     
     {{- with .Site.Params.Ga }}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{.}}"></script>
@@ -43,7 +46,7 @@
       </script>
     {{end -}}
   </head>
-  <body {{ block "bodyMeta" .}}{{end}}>
+  <body {{ block "bodyMeta" .}}{{end}} {{ if hugo.IsProduction }}data-production="true"{{ end }}>
     <!-- Code that all your templates share, like a header -->
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->

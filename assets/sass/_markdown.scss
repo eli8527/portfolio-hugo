@@ -6,6 +6,13 @@ article {
   --typography--leading-shoulder: calc(var(--typography--between) + var(--typography--line-height));
 
   > *:not(:first-child) { margin-top: var(--margin--top, var(--typography--leading-shoulder)) }
+	> figure {
+		--margin--top: calc(2 * var(--gutter));
+
+		+ * {
+			--margin--top: calc(2 * var(--gutter));
+		}
+	}
 
   h2 {
     --margin--top: calc(2 * var(--gutter));
@@ -61,4 +68,10 @@ article {
       padding-left: 0.666em;
     }
   }
+
+	figure {
+		img {
+			object-fit: contain;
+		}
+	}
 }

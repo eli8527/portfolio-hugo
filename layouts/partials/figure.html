@@ -1,18 +1,16 @@
-<figure>
-  {{- if .IsScreenshot }}
-    <div class="image-mat" {{with .MatColor }}style="--mat-color: {{. | safeCSS}};"{{end}}>
-  {{end -}}
-  {{- if .Video}}
-    <video src="{{.Video.RelPermalink}}" autoplay muted loop playsinline></video>
-  {{else}}
-    <img src="{{.Image.RelPermalink}}" {{with .Title}}alt="{{.}}"{{end}}/>
-  {{end -}}
-  {{- if .IsScreenshot }}
-    </div>
-  {{end -}}
-  {{- with .Caption}}
-    <figcaption>
-      <p>{{. | safeHTML}}</p>
-    </figcaption>
-  {{end -}}
-</figure>
+<single-figure
+  is-screenshot="{{ .IsScreenshot }}"
+  {{ with .DisableInteraction }}disable-interaction="{{. | safeCSS}}"{{ end }}
+  {{ with .MatColor }}mat="{{. | safeCSS}}"{{ end }}
+  {{ with .Plain }}additional-classes="plain"{{ end }}
+  {{ with .Caption }}caption="{{. | safeCSS}}"{{ end }}
+  {{ with .Title }}title="{{.}}"{{ end }}
+  {{ if .Video }}
+    is-video="true"
+    src="{{.Video.RelPermalink}}"
+  {{ else }}
+    src="{{.Image.RelPermalink }}"
+    width="{{.Image.Width}}" 
+    height="{{.Image.Height}}"
+  {{ end }}
+></single-figure>

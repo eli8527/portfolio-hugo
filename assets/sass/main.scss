@@ -4,6 +4,7 @@
 @use 'typography';
 @use 'sprites';
 @use 'links';
+@use 'images';
 
 @use 'layout';
 @use 'markdown';
@@ -30,6 +31,7 @@
   --color--white: #FAFAFA;
   --color--blue: #00F;
   --color--gray: #ddd;
+  --color--black: #000;
 
   --transition--timing: 500ms;
   --transition: var(--transition--timing) all;
@@ -92,37 +94,6 @@ h2[id] {
 }
 
 
-
-figure {
-  @extend %type--layout;
-
-  --typography--size: var(--typography--size--caption);
-
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  gap: var(--typography--cap);  
-  
-  img, video {
-    max-height: 70vh;
-  }
-}
-
-div.image-mat {
-  width: 100%;
-  height: 100%;
-  background-color: var(--mat-color, var(--color--gray));
-  padding: calc(1 * var(--gutter));
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img, video {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  }
-
-  video {
-    border-radius: 1% / 1.5%;
-  }
+body.frozen {
+  overflow: hidden;
 }

@@ -1,11 +1,12 @@
 @use 'fonts';
 @use 'typography';
 
-a {
+a, button:not([disabled]) {
   @extend %font--underline;
 
   color: var(--color--link, var(--color--blue));
   display: inline-block;
+  cursor: pointer;
 
   &:visited {
     color: var(--color--link, var(--color--blue));

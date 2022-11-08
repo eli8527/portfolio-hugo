@@ -8,6 +8,17 @@ svg.sprite--circle {
   fill: var(--color--blue);
 }
 
+
+svg.sprite--close {
+  @extend %type--layout;
+  --typography--size: var(--typography--size--h2);
+
+  width: var(--typography--cap);
+  height: var(--typography--cap);
+  stroke: var(--color--black);
+  stroke-width: 0.08em;
+}
+
 svg.sprite--arrow {
   @extend %type--layout;
 

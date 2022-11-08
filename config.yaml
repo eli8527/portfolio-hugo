@@ -7,7 +7,7 @@ params:
   tagline: Eric Li is a designer and software engineer based in <nobr>New York</nobr>.
 
 permalinks:
-  work: /:title/
+  work: /:sections[last]-:filename/
 
 disableKinds:
   - "taxonomy"

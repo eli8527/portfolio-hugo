@@ -21,7 +21,7 @@
     {{ partial "nav.html" . }}
     
     {{- $workSections := (.Site.GetPage "Section" "work").Pages -}}
-    {{- range $workSections}}
+    {{- range (sort $workSections ".Params.Order")}}
       {{- if gt (len .Pages) 0 }}
         <section class="work">
           {{- if not (eq .Params.HideTitle true)}}
@@ -34,7 +34,7 @@
           {{end -}}
           {{- $works := .RegularPages}}
           <ul class="work__list" {{with .Params.Grid}}style="--grid: {{. | safeCSS }};"{{end}}>
-            {{- range $works}}
+            {{- range (sort $works ".Params.Order")}}
               {{- $page := . -}}
               <li {{with .Params.Span}}style="--span: {{. | safeCSS }};"{{end}}>
                 <a class="no-underline"
@@ -47,10 +47,10 @@
                   {{- with .Params.Preview}}
                     {{- if .video}}
                       {{- $media := $page.Resources.GetMatch .video -}}
-                      {{partial "figure.html" (dict "Video" $media "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat) }}
+                      {{partial "figure.html" (dict "Video" $media "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Plain" .plain) }}
                     {{else}}
                       {{- $media := $page.Resources.GetMatch .image -}}
-                      {{partial "figure.html" (dict "Image" ($media.Resize "1100x") "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat) }}
+                      {{partial "figure.html" (dict "Image" ($media.Resize "1100x") "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Plain" .plain) }}
                     {{end -}}
                   {{end -}}
                   <article>
@@ -76,30 +76,4 @@
 {{ end }}
 
 {{define "footer"}}
-  <script>
-    const cardColor = getComputedStyle(document.querySelector('header')).backgroundColor;
-    const mainColor = getComputedStyle(document.querySelector('main')).backgroundColor;
-
-    const renderThemeColor = () => {
-      let themeColor = mainColor;
-      if (document.querySelector('main').getBoundingClientRect().top > 0) {
-        themeColor = cardColor;
-      }
-      document.querySelector('meta[name="theme-color"]').setAttribute('content',  themeColor);
-    }
-
-    const renderPage = () => {
-      if (document.querySelector('main').getBoundingClientRect().top > 0) {
-        document.querySelector('header').classList.remove('show-footer');
-      } else {
-        document.querySelector('header').classList.add('show-footer');
-      }
-    }
-
-    window.addEventListener('scroll', renderThemeColor);
-    window.addEventListener('scroll', renderPage);
-
-    renderPage();
-    renderThemeColor();
-  </script>
 {{end}}

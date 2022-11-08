@@ -4,5 +4,5 @@ ongoing: false
 years: 2021
 link: https://www.moma.org/magazine/articles/677
 description: >
-  Take a pause from browsing the web and read an essay I wrote about how to use the internet more mindfully.
+  An essay for MoMA Magazine discussing how to use the internet more mindfully, and how the design of web browsers focus on efficiency rather than mindfullness.
 ---

@@ -4,7 +4,7 @@ ongoing: false
 link: https://www.moma.org/
 years: 2019–2022
 description: >
-  I led design and front end development of [moma.org](https://www.moma.org) and other various digital surfaces such as digital screens, and in gallery page turners. I co-led design strategy for onsite digital experience touch points.
+  Product design and front end development of [moma.org](https://www.moma.org) and other various digital surfaces such as digital screens, design system, and in gallery page turners. Co-led design strategy for onsite digital experience touch points and COVID-19 strategy.
 previewImages:
   - src: home.png
     title: MoMA Homepage
