@@ -3,6 +3,7 @@ title: New Tab with MoMA
 description: A collaboration with Google Creative Lab
 span: 2
 order: 13
+published: false
 preview: 
   image: new-tab.jpg  
   title: MoMA.org homepage

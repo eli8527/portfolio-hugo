@@ -1,6 +1,6 @@
 ---
 title: Collection Pages
-description: Information architecture and design pass of our artist and art term indicies and pages
+description: Information architecture and design pass of core artist and art term pages
 order: 1
 span: 3
 preview: 

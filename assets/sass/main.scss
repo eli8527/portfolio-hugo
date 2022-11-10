@@ -16,7 +16,7 @@
 :root {
   @extend %font--haas;
 
-  --typography--leading: 1.25;
+  --typography--leading: 1.3;
   --typography--leading--heading: 1.1;
 
   --typography--size: 1.6rem;
@@ -69,10 +69,12 @@ h2 {
   --typography--size: var(--typography--size--h2);
 }
 
-h2[id] {
-  margin-top: calc(-1 * var(--gutter));
-  padding-top: calc(1 * var(--gutter));
-  width: fit-content;
+h2 {
+  span[id] {
+    margin-top: calc(-1 * var(--gutter));
+    padding-top: calc(1 * var(--gutter));
+    width: fit-content;
+  }
 
   &[aria-label="MoMA logo"] {
     display: flex;

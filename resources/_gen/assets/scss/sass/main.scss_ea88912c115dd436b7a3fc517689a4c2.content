@@ -6,9 +6,9 @@ html *:where(:not(audio, canvas, iframe, img, svg, video):not(svg *, symbol *)) 
   display: revert;
 }
 
-*,
-*::before,
-*::after {
+html *,
+html *::before,
+html *::after {
   box-sizing: border-box;
 }
 
@@ -496,6 +496,9 @@ article h2 {
 article h3 {
   --margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
 }
+article p {
+  max-width: 75ch;
+}
 article hr {
   --margin--top: calc(2 * var(--gutter));
 }
@@ -814,7 +817,7 @@ body.work .hero {
   justify-content: center;
 }
 :root {
-  --typography--leading: 1.25;
+  --typography--leading: 1.3;
   --typography--leading--heading: 1.1;
   --typography--size: 1.6rem;
   --typography--size--card: calc(var(--typography--size) * 1.45);
@@ -860,20 +863,20 @@ h2 {
   --typography--size: var(--typography--size--h2);
 }
 
-h2[id] {
+h2 span[id] {
   margin-top: calc(-1 * var(--gutter));
   padding-top: calc(1 * var(--gutter));
   width: fit-content;
 }
-h2[id][aria-label="MoMA logo"] {
+h2[aria-label="MoMA logo"] {
   display: flex;
   align-items: center;
   height: var(--typography--cap);
 }
-h2[id]:hover a {
+h2:hover a {
   visibility: visible;
 }
-h2[id] a {
+h2 a {
   margin-left: 0.5ch;
   display: inline-block;
   visibility: hidden;

@@ -30,7 +30,6 @@ From here, we dived deeper into core SSO user journeys. Untangling this was a ch
 
 {{< figure src="sso-journeys-deep-2.png" screenshot="true" class="plain" mat="#eee" caption="Some additional journeys needed to be handled with SSO" >}}
 
-
 Of course we also had to design account creation, conversion flows, forgot password flows, and error states. After several rounds of user testing we arrived at a working prototype that I then worked with developers to translate into code.
 
 {{< figure src="sso-prototype.png" screenshot="true" class="plain" mat="#eee" caption="Design comps for our user testing prototype" >}}

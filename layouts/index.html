@@ -26,7 +26,7 @@
         <section class="work">
           {{- if not (eq .Params.HideTitle true)}}
             {{- if eq .Title "MoMA"}}
-              <h2 id="moma" aria-label="MoMA logo">{{partial "sprites/moma.html"}}<a class="no-underline" href="#{{ .Title | urlize}}">#</a></h2>
+              <h2 aria-label="MoMA logo"><span id="moma"></span>{{partial "sprites/moma.html"}}<a class="no-underline" href="#{{ .Title | urlize}}">#</a></h2>
             {{- else -}}
               {{partial "heading-anchor.html" .Title}}
             {{end -}}

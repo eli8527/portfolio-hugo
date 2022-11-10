@@ -22,6 +22,10 @@ article {
     --margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
   }
 
+	p {
+		max-width: 75ch;
+	}
+
   hr {
     --margin--top: calc(2 * var(--gutter));
   }

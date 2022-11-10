@@ -12,4 +12,4 @@ hero:
   caption: A page turner used to showcase journals from a recent exhibition on Dorothea Lange.
 ---
 
-Produced in collaboration with [CHIPS](https://chips.nyc/).
+Produced in collaboration with [CHIPS](https://chips.nyc/). More soon.

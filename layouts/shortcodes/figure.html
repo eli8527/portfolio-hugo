@@ -21,7 +21,7 @@
     is-video="true"
     src="{{.Get "src"}}"
   {{ else }}
-    {{- $original := (.Page.Resources.ByType "image").GetMatch (printf "*%s" (.Get "src")) -}}
+    {{- $original := (.Page.Resources.ByType "image").GetMatch (printf "%s" (.Get "src")) -}}
     {{- $resized := ($original.Resize "2000x") -}}
     src="{{$resized.RelPermalink }}"
     width="{{$resized.Width}}" 
