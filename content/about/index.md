@@ -6,7 +6,8 @@ profile:
   src: profile.jpg
   alt: Photo of Eric Li wearing a blue jacket, gray t-shirt, and black pants in front of a neutral background.
   credit: Photo taken by [Sydney Mieko King](https://www.sydneymking.com/).
-
+colophon: |
+  This website was built with [Hugo](https://gohugo.io/) and hosted on [GitHub Pages](https://pages.github.com/). It is set using the same typographic stylesheet that [Michael Fehrenbach](https://michaelfehrenbach.com/) and I developed for use in [moma.org](https://www.moma.org/). The typefaces used are Arnhem and Neue Haas Grotesk. 
 ---
 Hi, I’m Eric — I’m a designer and software engineer with 7+ years of experience based in New York. I see software as a medium through which good design exists, and care significantly about craft and execution.
 

@@ -26,6 +26,11 @@ article {
 		max-width: 75ch;
 	}
 
+	aside {
+		--margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
+		@extend em;
+	}
+
   hr {
     --margin--top: calc(2 * var(--gutter));
   }
