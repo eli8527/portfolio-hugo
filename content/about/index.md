@@ -36,7 +36,8 @@ I graduated with a B.S.E. in computer science and visual arts from Princeton, wh
 
 
 
-### Writing, Interviews, Talks
+### Writing, Interviews, Talks, Panels
+- [CSS Inline Layout Design Review Workshop](https://fantasai.inkedblade.net/style/events/inline-workshop), invited guest to a workshop about upcoming typographic CSS properties on the web.
 - [*Tools not Rules*](https://uxdesign.cc/tools-not-rules-9daef895aab7), article by Matt Owens, contribution on MoMA design tooling and infrastructure.
 - [*Product Design at MoMA*](https://mo.ma/figma), Figma Config 2022 talk on product design and processes at MoMA with Stephanie&nbsp;Schapowal.
 - [*Taking a Walk Across the Internet*](https://www.moma.org/magazine/articles/677), essay in MoMA Magazine on using the internet mindfully.
