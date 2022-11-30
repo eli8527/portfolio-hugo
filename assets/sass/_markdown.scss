@@ -33,6 +33,7 @@ article {
 
   hr {
     --margin--top: calc(2 * var(--gutter));
+		border-top: 1px solid black;
   }
 
   ul,

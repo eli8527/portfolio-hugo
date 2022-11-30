@@ -35,7 +35,12 @@ nobr,
 }
 
 strong {
+	@extend %typography;
+
   --typography--weight: bold;
+	&:not(._) {
+		display: inline-block;
+	}
 }
 
 // Face/weight.
