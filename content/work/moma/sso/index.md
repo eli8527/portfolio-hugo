@@ -8,7 +8,7 @@ data:
   - title: Year
     description: 2022
 description: Design and front-end development of a unifed login across all of MoMA’s digital properties
-order: 0
+order: 1
 span: 3
 
 preview: 
@@ -67,7 +67,9 @@ We also needed to create user journeys for account creation when signing up for 
 
 {{< heading-anchor title="Design" >}}
 
-By outlining our user journeys and screens prior to design, we were able to prioritize which core experiences we would support at launch. Given that we wouldn’t have time to handle all of the edge cases, we also designed for moments that drove users to a Zendesk widget and discussed with Membership how to handle these cases. This process also let us understand which screens and components we could reuse throughout the user journeys so that engineering wasn’t doing duplicate work.
+By outlining our user journeys and screens prior to design, we were able to prioritize which core experiences we would support at launch. 
+
+Given that we wouldn’t have time to handle all of the edge cases, we also designed for moments that drove users to a Zendesk widget and discussed with Membership how to handle these cases. This process also let us understand which screens and components we could reuse throughout the user journeys so that engineering wasn’t doing duplicate work.
 
 Once this was completed, we moved into design, creating account creation screens, conversion flows, forgot password flows, and error states. 
 
@@ -79,20 +81,26 @@ Of particular challenge during this process was the need to create additional de
 
 {{< heading-anchor title="User testing" >}}
 
-Once we had gone through several design revisions, we turned to user testing. In this process, we focused on ensuring that the core log-in experience wasn’t confusing to users. We also wanted data on whether our approach to account creation and conversion made sense — making sure that users didn’t get stuck in endless loops.
+Once we had gone through several design revisions, we turned to user testing. In this process, we focused on ensuring that the core log-in experience wasn’t confusing to users. We also wanted data on whether our approach to account creation and conversion made sense—making sure that users didn’t get stuck in endless loops.
 
 We worked with the Membership team to canvas an audience of existing and non-members to test our experience on.
 
-What we found was that the core login and conversion journeys were intuitive, but users often got tripped up on new account creation. Given that the Membership checkout flow was only one page and our desire to limit our scope of work, we explored several additional options before settling on a user flow which put account creation front and center, with emphasis on using Google and Apple authentication first.
+{{< figure src="user-research.png" screenshot="true" class="plain" mat="#eee" caption="Notes from our user research focusing on the check out screen" >}}
+
+What we found was that the core login and conversion journeys were intuitive, but users often got tripped up on new account creation. Most often, users were mistaking the SSO buttons for Apple and Google pay buttons.
+
+Given that the Membership checkout flow was only one page, and that we wanted to limit our scope, we explored several options ranging from design to copy before settling on a user flow which put account creation first. We emphasizied being able to log in with Google and Apple to also help users prefill other content down the checkout flow.
 
 {{< figure src="checkout.png" screenshot="true" class="plain" mat="#eee" caption="Our final design for account creation on member checkout" >}}
 
 {{< heading-anchor title="Implementation" >}}
 
-After several rounds of user testing we arrived at a working prototype that I then worked with developers to translate into code. To do this, we created a custom Vue implementation interface that sat on top of our identity service provider, Auth0.
+After several rounds of user testing we arrived at a working prototype that I then worked with developers to translate into code. To do this, the IT/Apps team handled backend and front-end implementation on the membership site while I created a Vue app that sat on top of our identity service provider, Auth0.
+
+This Vue implementation was built on our existing atomic CSS infrastructure and handled universal login and password recovery. I also paired with the IT/Apps team to onboard into our atomic CSS infrastructure.
 
 {{< figure src="sso-final.png" screenshot="true" class="plain" mat="#eee" caption="Final login screens for retail, members, and moma.org" >}}
 
-Link
+---
 
-- [Log in](https://www.moma.org/auth/login)
+[Log in screen](https://www.moma.org/auth/login)

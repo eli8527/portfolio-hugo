@@ -139,7 +139,10 @@ strong {
   --typography--weight: bold;
 }
 strong:not(._) {
-  display: inline-block;
+  display: inline;
+}
+strong:not(._):before, strong:not(._):after {
+  display: none;
 }
 
 article ul > dt,
@@ -503,7 +506,7 @@ article h2 {
 article h3 {
   --margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
 }
-article p {
+article p:not(._), article li:not(._) {
   max-width: 75ch;
 }
 article aside {
@@ -576,6 +579,10 @@ article ul > li {
 }
 article figure img {
   object-fit: contain;
+}
+article iframe {
+  width: 100%;
+  aspect-ratio: var(--aspect-ratio, 16/9);
 }
 
 nav {

@@ -39,7 +39,8 @@ strong {
 
   --typography--weight: bold;
 	&:not(._) {
-		display: inline-block;
+		&:before, &:after { display: none } // Collides with the marker, so we use the margin.
+		display: inline;
 	}
 }
 

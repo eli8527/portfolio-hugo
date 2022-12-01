@@ -22,8 +22,10 @@ article {
     --margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
   }
 
-	p {
-		max-width: 75ch;
+	p, li {
+		&:not(._) {
+			max-width: 75ch;
+		}
 	}
 
 	aside {
@@ -57,7 +59,7 @@ article {
 
 			margin-bottom: var(--typography--margin--bottom);
 			margin-top:    var(--typography--margin--top);
-
+			
 			&:before, &:after { display: none } // Collides with the marker, so we use the margin.
     }
 
@@ -83,5 +85,10 @@ article {
 		img {
 			object-fit: contain;
 		}
+	}
+
+	iframe {
+		width: 100%;
+		aspect-ratio: var(--aspect-ratio, 16/9);
 	}
 }
