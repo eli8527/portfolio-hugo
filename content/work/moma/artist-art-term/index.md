@@ -35,7 +35,7 @@ In the survey, I asked users whether they were able to find what they were looki
 
 This provided us both insight into what sorts of content we should have on this page, as well how we might reorganize the page information hierarchy. We also asked how helpful filtering and additional search options would be, learning that it would be more helpful on artist pages than on art terms.
 
-<iframe src="user-survey.pdf#toolbar=0&navpanes=0" style="--aspect-ratio: 17/11;"></iframe>
+<iframe src="https://drive.google.com/file/d/10_JCOVQ8K7bv8u0XC5A1V5bFko5ztOuJ/preview" style="--aspect-ratio: 16/9;" allow="autoplay"></iframe>
 
 
 {{< figure src="click.png" screenshot="true" class="plain" mat="#eee" caption="Heatmap of clicks on the artist index" >}}
