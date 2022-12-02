@@ -2,7 +2,7 @@
 title: Digital Wayfinding
 description: Design, build, and maintenance of the Museum’s 31 informational and wayfinding screens
 span: 4
-order: 2
+order: 14
 preview: 
   image: screens.jpeg
   title: Program wall in lobby

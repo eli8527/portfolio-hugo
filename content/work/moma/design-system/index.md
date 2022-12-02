@@ -1,13 +1,14 @@
 ---
 title: Design System
 description: Establishment of a design system in Figma, as well as creation of a bespoke Atomic CSS library
-span: 4
-order: 15
+span: 3
+order: 4
 published: false
 preview: 
   image: moma-design.png
   type: screenshot
   plain: true
+  mat: '#1263BD'
   title: MoMA.org homepage
 hero:
   image: moma-design.png

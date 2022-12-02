@@ -2,8 +2,8 @@
 title: In-Gallery Page Turners
 description: Design, build, and production of the Museum’s in-house page turners
 span: 2
-order: 4
-preview: 
+order: 15
+preview:
   image: page-turners.jpg
   title: Page turner in an exhibition for the American photographer Dorothea Lange.
 hero: 
