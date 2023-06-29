@@ -11,11 +11,13 @@ colophon: |
 ---
 Hi, I’m Eric — I’m a designer and software engineer with 7+ years of experience based in New York. I see software as a medium through which good design exists, and care significantly about craft and execution.
 
-I spent 3+ years as a Senior Product Designer and Developer at the [Museum of Modern&nbsp;Art](https://www.moma.org/), where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. Prior to MoMA, I worked at <nobr>[O-R-G](https://o-r-g.com/)</nobr>, [Google&nbsp;Design](https://design.google/), [IDEO](https://ideo.com/), and [LUST](https://lust.nl/).
+At the Eames Institute, my role as Digital Product Director is to oversee and translate all the amazing work we do to our digital surfaces. My work ranges from design and development to strategy; and mainly covers the website, as well as the myriad of other digital platforms we use to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors.
 
-I also teach interaction design and computer science as a faculty member in the design programs at [RISD](http://source.f22.href.blue/) and [Parsons](https://js.f22.href.blue/), finally solving the age old question of whether designers should code. I frequently collaborate on projects with [Nazlı&nbsp;Ercan](https://nazli-ercan.com/) under the name [<nobr>Ercan–Li</nobr>](https://ercan-li.com/), as well as with [Michael&nbsp;Fehrenbach](https://michaelfehrenbach.com/).
+Prior to joining the Eames Institute, I was the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and LUST. 
 
-I graduated with a B.S.E. in computer science and visual arts from Princeton, where I was the 2018 recipient of the Jim Seawright Award in Visual Arts. I&nbsp;have been an invited guest to Princeton, Yale, NYU, SVA, TCNJ, Pratt, CCA, and&nbsp;UPenn. 
+I also teach interaction design and computer science at Parsons, and have been an invited guest at Princeton, Yale, NYU, SVA, TCNJ, Rutgers, Pratt, CCA, RISD, and UPenn.
+
+<!-- I graduated with a B.S.E. in computer science and visual arts from Princeton, where I was the 2018 recipient of the Jim Seawright Award in Visual Arts. -->
 
 
 ### Links
