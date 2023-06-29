@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import '/fonts/arnhem/stylesheet.css';
 @import '/fonts/haas/stylesheet.css';
 html *:where(:not(audio, canvas, iframe, img, svg, video):not(svg *, symbol *)) {
@@ -227,22 +226,22 @@ td {
 }
 @supports (display: flow-root) {
   article ul > dt,
-article ul > dd,
-article ul > li,
-article ol > dt,
-article ol > dd,
-article ol > li,
-article dl > dt,
-article dl > dd,
-article dl > li, strong,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-td {
+  article ul > dd,
+  article ul > li,
+  article ol > dt,
+  article ol > dd,
+  article ol > li,
+  article dl > dt,
+  article dl > dd,
+  article dl > li, strong,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  td {
     display: flow-root;
   }
 }
