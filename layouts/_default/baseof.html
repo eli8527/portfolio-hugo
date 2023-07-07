@@ -35,6 +35,10 @@
     {{- $js := resources.Get "scripts/main.js" | js.Build -}}
     <script type="module" src="{{($js | resources.Fingerprint "sha512").RelPermalink}}"></script>
     
+    {{- with .Site.Params.GoatCounter }}
+      <script data-goatcounter="https://{{.}}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    {{end -}}
+    
     {{- with .Site.Params.Ga }}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{.}}"></script>
       <script>
