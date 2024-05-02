@@ -26,6 +26,7 @@
 
     <meta content="{{ .Site.BaseURL }}" name="og:url" />
     <meta content="website" name="og:type" />
+    <link rel="me" href="https://mastodon.social/@eli8527">
 
     {{ $sass := resources.Get "sass/main.scss" }}
     {{ $options := (dict "enableSourceMap" (not hugo.IsProduction) "transpiler" "dartsass") }}
