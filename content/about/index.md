@@ -4,14 +4,14 @@ type: about
 menu: main
 profile: 
   src: profile.jpg
-  alt: Photo of Eric Li wearing a blue jacket, gray t-shirt, and black pants in front of a neutral background.
-  credit: Photo taken by [Sydney Mieko King](https://www.sydneymking.com/).
+  alt: Photo of Eric Li wearing a blue jacket, black dress shirt, and black pants.
+  credit: Photo by [Nicholas Calcott](https://www.nicholascalcott.com/).
 colophon: |
   This website was built with [Hugo](https://gohugo.io/) and hosted on [GitHub Pages](https://pages.github.com/). It is set using the same typographic stylesheet that [Michael Fehrenbach](https://michaelfehrenbach.com/) and I developed for use in [moma.org](https://www.moma.org/). The typefaces used are Arnhem and Neue Haas Grotesk. 
 ---
-Hi, I’m Eric — I’m a designer and software engineer with 7+ years of experience based in New York. I see software as a medium through which good design exists, and care significantly about craft and execution.
+Hi, I’m Eric — I’m a multidisciplinary product leader with 9+ years of experience, based in New York. I view software as a medium for good design, and care deeply about craft and execution.
 
-At the Eames Institute, my role as Digital Product Director is to oversee and translate all the amazing work we do to our digital surfaces. My work ranges from design and development to strategy; and mainly covers the website, as well as the myriad of other digital platforms we use to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors.
+At the Eames Institute, my role as Senior Digital Product Director is to oversee and translate all the amazing work we do to our digital surfaces. My work ranges from design and development to strategy; and mainly covers the website, as well as the myriad of other digital platforms we use to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors.
 
 Prior to joining the Eames Institute, I was the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and LUST. 
 
