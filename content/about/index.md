@@ -9,7 +9,7 @@ profile:
 colophon: |
   This website was built with [Hugo](https://gohugo.io/) and hosted on [GitHub Pages](https://pages.github.com/). It is set using the same typographic stylesheet that [Michael Fehrenbach](https://michaelfehrenbach.com/) and I developed for use in [moma.org](https://www.moma.org/) and [eamesinstitute.org](https://www.eamesinstitute.org/). The typefaces used are Arnhem and Neue Haas Grotesk. 
 ---
-Hi, I’m Eric — a product leader, designer, software engineer, and educator based in <nobr>New York</nobr>. I view software as a medium for good design, and care deeply about craft and execution.
+Hi, I’m Eric — a multidiscplinary product leader, designer, software engineer, and educator based in <nobr>New York</nobr>. I view software as a medium for good design, and care deeply about craft and execution.
 
 At the Eames Institute, my role as Senior Digital Product Director is to oversee and translate all the amazing work we do to our digital surfaces. My work ranges from design and development to strategy; and mainly covers the website, as well as the myriad of other digital platforms we use to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors.
 
@@ -36,6 +36,7 @@ I graduated summa cum laude with a B.S.E. in computer science and visual arts fr
 - [Multi not Multi](https://www.instagram.com/multi.not.multi/)
 
 ### Writing, Interviews, Talks, Panels
+- [Why I Do What I Do](https://www.youtube.com/watch?v=1Fxsb2_VdBw), a talk given as part of the Parsons yearly Communication Design speaker series.
 - [CSS Inline Layout Design Review Workshop](https://fantasai.inkedblade.net/style/events/inline-workshop), invited guest to a workshop about upcoming typographic CSS properties on the web.
 - [*Tools not Rules*](https://uxdesign.cc/tools-not-rules-9daef895aab7), article by Matt Owens, contribution on MoMA design tooling and infrastructure.
 - [*Product Design at MoMA*](https://mo.ma/figma), Figma Config 2022 talk on product design and processes at MoMA with Stephanie&nbsp;Schapowal.
