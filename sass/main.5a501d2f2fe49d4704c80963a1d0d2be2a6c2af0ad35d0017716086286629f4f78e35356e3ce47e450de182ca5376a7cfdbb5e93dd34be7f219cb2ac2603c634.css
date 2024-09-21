@@ -79,7 +79,7 @@ h2, body.home header article {
   --typography--shoulder--bottom: 0.133;
   --typography--inset--left: 0;
   --typography--inset--right: 0;
-  --typography--tracking: 0.0;
+  --typography--tracking: .01;
   --typography--underline: 0.06;
   --typography--underline--shift: -0.06;
   font-family: "NeueHaas", sans-serif;
@@ -373,6 +373,7 @@ a:has(svg) nobr {
 }
 
 a, button:not([disabled]) {
+  transition: text-decoration-color linear calc(0.25 * var(--transition--timing));
   color: var(--color--link, var(--color--blue));
   display: inline-block;
   cursor: pointer;
@@ -381,7 +382,7 @@ a:visited, button:not([disabled]):visited {
   color: var(--color--link, var(--color--blue));
 }
 a:hover, button:not([disabled]):hover {
-  text-decoration: none;
+  text-decoration-color: rgba(0, 0, 0, 0);
 }
 a:focus-visible, button:not([disabled]):focus-visible {
   outline: calc(var(--typography--underline) * 2em) solid rgba(0, 0, 0, 0.7);
@@ -626,6 +627,16 @@ main footer {
   }
 }
 
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(calc(0.5 * var(--gutter)));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body.home header {
   --color: var(--color--white);
   --color--link: var(--color--white);
@@ -638,19 +649,26 @@ body.home header {
   transition: var(--transition);
   text-wrap: balance;
 }
-body.home header > * {
+body.home header > div {
   padding: var(--gutter);
   display: flex;
   align-items: center;
   opacity: 1;
   transition: var(--transition);
-}
-body.home header div:first-of-type {
-  grid-row: span 1;
-}
-body.home header div:last-of-type {
-  grid-row: 3/span 1;
   opacity: 0;
+}
+body.home header > div:first-of-type {
+  grid-row: span 1;
+  animation: animate-in linear calc(0.5 * var(--transition--timing)) forwards;
+}
+body.home header > div:last-of-type {
+  grid-row: 3/span 1;
+}
+body.home header.show-footer div:first-of-type {
+  opacity: 0;
+}
+body.home header.show-footer div:last-of-type {
+  opacity: 1;
 }
 body.home header article {
   --typography--leading: var(--typography--leading--heading);
@@ -658,12 +676,6 @@ body.home header article {
 }
 body.home header article h1 {
   --typography--size: var(--typography--size--card);
-}
-body.home header.show-footer div:first-of-type {
-  opacity: 0;
-}
-body.home header.show-footer div:last-of-type {
-  opacity: 1;
 }
 body.home header + main {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -674,7 +686,7 @@ body.home nav span.nav__name {
 body.home main {
   margin-top: var(--card--main--height);
   margin-bottom: var(--card--footer--height);
-  gap: calc(4 * var(--gutter));
+  gap: calc(2 * var(--gutter));
 }
 body.home main > section:last-child {
   margin-top: unset;
