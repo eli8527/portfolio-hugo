@@ -1,6 +1,6 @@
 ---
 title: Typography & Interaction, Parsons
-description: A year-long graduate class, taught with Michael Fehrenbach, which provides a rigorous foundation of typographic and interaction principles.
+description: Core graduate course on interaction design and software
 link: https://typography-interaction.github.io/
 preview: 
   image: header.png

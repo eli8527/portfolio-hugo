@@ -9,7 +9,7 @@ data:
   - title: Year
     description: 2021
 order: 1
-span: 3
+span: 4
 preview: 
   video: artist-art-terms.mp4
   image: krasner.png

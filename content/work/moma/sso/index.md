@@ -9,7 +9,7 @@ data:
     description: 2022
 description: Design and front-end development of a unifed login across all of MoMA’s digital properties
 order: 1
-span: 3
+span: 2
 
 preview: 
   image: login.png

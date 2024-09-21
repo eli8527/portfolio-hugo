@@ -1,6 +1,6 @@
 ---
 title: "SOURCE, RISD"
-description: A graduate-level seminar which interrogates the many definitions of the word "source" through readings and the lens of digital design tools.
+description: Graduate seminar interrogating "source" through the lens of digital tools
 link: https://source.f22.href.blue/
 preview: 
   image: source.png

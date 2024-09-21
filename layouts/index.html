@@ -30,7 +30,9 @@
             {{- else -}}
               {{partial "heading-anchor.html" .Title}}
             {{end -}}
-            <article>{{.Description | markdownify}}</article>
+            {{- with .Description}}
+              <article><p>{{. | markdownify}}</p></article>
+            {{end -}}
           {{end -}}
           {{- $works := .RegularPages}}
           <ul class="work__list" {{with .Params.Grid}}style="--grid: {{. | safeCSS }};"{{end}}>

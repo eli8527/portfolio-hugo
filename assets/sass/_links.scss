@@ -4,6 +4,7 @@
 a, button:not([disabled]) {
   @extend %font--underline;
 
+  transition: text-decoration-color linear calc(0.25 * var(--transition--timing));
   color: var(--color--link, var(--color--blue));
   display: inline-block;
   cursor: pointer;
@@ -13,7 +14,8 @@ a, button:not([disabled]) {
   }
 
   &:hover {
-    text-decoration: none;
+    // text-decoration: none;
+    text-decoration-color:    rgba(0, 0, 0, 0);
   }
 
   &:focus-visible {
