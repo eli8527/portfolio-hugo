@@ -616,12 +616,12 @@ main footer {
 }
 
 :root {
-  --card--main--height: 80vh;
+  --card--main--height: 60vh;
   --card--footer--height: 10vh;
 }
 @supports (height: 100svh) {
   :root {
-    --card--main--height: 80svh;
+    --card--main--height: 60svh;
     --card--footer--height: 10svh;
   }
 }
@@ -636,6 +636,7 @@ body.home header {
   z-index: -1;
   grid-template-rows: var(--card--main--height) 1fr var(--card--footer--height);
   transition: var(--transition);
+  text-wrap: balance;
 }
 body.home header > * {
   padding: var(--gutter);
