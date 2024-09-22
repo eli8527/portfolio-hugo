@@ -680,9 +680,6 @@ body.home header article h1 {
 body.home header + main {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-body.home nav span.nav__name {
-  display: none;
-}
 body.home main {
   margin-top: var(--card--main--height);
   margin-bottom: var(--card--footer--height);
