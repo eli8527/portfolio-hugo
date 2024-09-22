@@ -9,6 +9,8 @@ figure {
   align-items: start;
   flex-direction: column;
   gap: var(--typography--cap);  
+  border-radius: calc(0.5 * var(--typography--cap)); 
+  overflow: hidden;
 
   button {
     width: 100%;
