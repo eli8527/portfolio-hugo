@@ -399,6 +399,8 @@ figure {
   align-items: start;
   flex-direction: column;
   gap: var(--typography--cap);
+  border-radius: calc(0.5 * var(--typography--cap));
+  overflow: hidden;
 }
 figure button {
   width: 100%;
@@ -871,7 +873,7 @@ body.work .hero figure img, body.work .hero figure video {
   --typography--size--caption: calc(var(--typography--size) * 0.875);
   --gutter: 2.0rem;
   --max-width: 110.0rem;
-  --color--white: #FAFAFA;
+  --color--white: #FBFBFB;
   --color--blue: #00F;
   --color--gray: #ddd;
   --color--black: #000;
