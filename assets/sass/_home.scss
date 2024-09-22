@@ -81,12 +81,6 @@ body.home {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
-  nav {
-    span.nav__name {
-      display: none;
-    }
-  }
-
   main {
     margin-top: var(--card--main--height);
     margin-bottom: var(--card--footer--height);
