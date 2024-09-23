@@ -868,7 +868,7 @@ body.work .hero {
   justify-content: center;
 }
 body.work .hero figure img, body.work .hero figure video {
-  max-width: var(--max-width);
+  max-width: min(100%, var(--max-width));
 }
 
 :root {
