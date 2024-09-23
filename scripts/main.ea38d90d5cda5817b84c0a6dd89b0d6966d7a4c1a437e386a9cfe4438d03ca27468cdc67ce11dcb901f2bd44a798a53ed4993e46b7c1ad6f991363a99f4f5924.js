@@ -19193,12 +19193,12 @@ ${codeFrame}` : message);
     <template v-if="isScreenshot">
       <div class="image-mat" :style="{'--mat-color': mat}">
         <video v-if="isVideo" :src="src" :title="alt" autoplay muted loop playsinline></video>
-        <img v-else loading="lazy" :width="width" :height="height" :src="src" :alt="alt"/>
+        <img v-else @load="$emit('load')" :width="width" :height="height" :src="src" :alt="alt"/>
       </div>
     </template>
     <template v-else>
       <video v-if="isVideo" :src="src" :title="alt" autoplay muted loop playsinline></video>
-      <img v-else loading="lazy" :width="width" :height="height" :src="src" :alt="alt"/>
+      <img v-else @load="$emit('load')" :width="width" :height="height" :src="src" :alt="alt"/>
     </template>
   `
     )
@@ -19273,13 +19273,14 @@ ${codeFrame}` : message);
     },
     data() {
       return {
-        showLightbox: false
+        showLightbox: false,
+        loaded: false
       };
     },
     template: (
       /* html */
       `
-    <figure>
+    <figure v-show="loaded || isVideoBool">
       <button v-if="!disableInteractionBool" @click="showLightbox = true">
         <image-component
           :class="additionalClasses"
@@ -19290,6 +19291,7 @@ ${codeFrame}` : message);
           :alt="title"
           :is-screenshot="isScreenshotBool"
           :is-video="isVideoBool"
+          @load="loaded = true"
         />
       </button>
       <image-component
@@ -19302,6 +19304,7 @@ ${codeFrame}` : message);
         :alt="title"
         :is-screenshot="isScreenshotBool"
         :is-video="isVideoBool"
+        @load="loaded = true"
         />
       <figcaption v-if="caption.length > 0">
         <p v-html="caption" />
