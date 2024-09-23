@@ -1,22 +1,21 @@
 ---
-title: Collection Pages
-description: Redesign and discoverability pass of core artist and art term collection pages
-data:
-  - title: Role
-    description: Product design, user research and surveys, content strategy
-  - title: Collaborators
-    description: Education, Content & Editorial
-  - title: Year
-    description: 2021
+title: MoMA Collection
+description: Discoverability and feature updates to core parts of the Museum’s collection 
+# data:
+#   - title: Role
+#     description: Product design, user research and surveys, content strategy
+#   - title: Collaborators
+#     description: Education, Content & Editorial
+#   - title: Year
+#     description: 2021
 order: 1
 span: 4
 preview: 
-  video: artist-art-terms.mp4
-  image: krasner.png
-  title: Video walking through artist and art term pages of moma.org, including Jackson Pollock and Pop Art.
-  type: screenshot
+  image: collection.jpg
+  title: Image showing the differences between marketing and archival applications of Monet’s Water Lilies on moma.org
 hero: 
   video: artist-art-terms.mp4
+  mat: "#FAC300"
   type: screenshot
   title: Video walking through artist and art term pages of moma.org, including Jackson Pollock and Pop Art.
 ---

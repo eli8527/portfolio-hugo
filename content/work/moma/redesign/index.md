@@ -1,6 +1,6 @@
 ---
 title: moma.org Redesign
-description: Redesign of moma.org as part of the Museum’s 2019 rebrand and expansion. 
+description: A redesign and design system update to MoMA’s iconic website
 span: 6
 order: 10
 preview: 

@@ -30,7 +30,7 @@ body.work {
     
     figure {
       img, video {
-        max-height: 55vh;
+        max-width: var(--max-width);
       }
     }
   }

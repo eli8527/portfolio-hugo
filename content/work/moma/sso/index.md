@@ -1,22 +1,21 @@
 ---
-title: Single Sign On
-data:
-  - title: Role
-    description: Product design, user research and testing, front-end implementation 
-  - title: Collaborators
-    description: Membership, IT/Apps
-  - title: Year
-    description: 2022
-description: Design and front-end development of a unifed login across all of MoMA’s digital properties
-order: 1
+title: MoMA Authentication
+# data:
+#   - title: Role
+#     description: Product design, user research and testing, front-end implementation 
+#   - title: Collaborators
+#     description: Membership, IT/Apps
+#   - title: Year
+#     description: 2022
+description: Introducting single sign on across multiple products of the Museum
+order: 2
 span: 2
 
 preview: 
-  image: login.png
-  title: moma.org single sign on, with a yellow background.
-  type: screenshot
+  image: login.jpg
+  title: Image of an iPhone with moma.org’s login screen.
 hero: 
-  image: login.png
+  image: _login.png
   type: screenshot
   title: moma.org single sign on, with a yellow background.
   caption: Single Sign On for [moma.org](https://www.moma.org/auth/login)

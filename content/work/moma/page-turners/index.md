@@ -1,6 +1,6 @@
 ---
-title: In-Gallery Page Turners
-description: Design, build, and production of the Museum’s in-house page turners
+title: MoMA In-Gallery Page Turners
+description: Design, build, and production of in gallery interactives
 span: 2
 order: 12
 preview:

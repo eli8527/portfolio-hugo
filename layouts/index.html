@@ -52,7 +52,7 @@
                       {{partial "figure.html" (dict "Video" $media "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Plain" .plain) }}
                     {{else}}
                       {{- $media := $page.Resources.GetMatch .image -}}
-                      {{partial "figure.html" (dict "Image" ($media.Resize "1100x") "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Plain" .plain) }}
+                      {{partial "figure.html" (dict "Image" ($media.Resize "2200x") "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Plain" .plain) }}
                     {{end -}}
                   {{end -}}
                   <article>

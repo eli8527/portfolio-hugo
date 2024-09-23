@@ -4,7 +4,7 @@ import ImageC from './components/single-figure.js';
 let Vue;
 
 document.addEventListener('DOMContentLoaded', async () => {
-  if (document.body.dataSet?.production === 'true') {
+  if (window.location.protocol === 'https:') {
     Vue = await import('./vue.esm-browser.prod');
   } else {
     Vue = await import('./vue.esm-browser');

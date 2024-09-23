@@ -1,6 +1,6 @@
 ---
-title: Digital Wayfinding
-description: Design, build, and maintenance of the Museum’s 31 informational and wayfinding screens
+title: MoMA Digital Wayfinding
+description: Product leadership of the digital information screens throughout the Museum
 span: 4
 order: 14
 preview: 
