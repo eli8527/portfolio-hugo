@@ -66,15 +66,16 @@ export default {
     ImageComponent,
   },
   mounted() {
-    
+
   },
   data() {
     return {
       showLightbox: false,
+      loaded: false,
     }
   },
   template: /* html */ `
-    <figure>
+    <figure v-show="loaded || isVideoBool">
       <button v-if="!disableInteractionBool" @click="showLightbox = true">
         <image-component
           :class="additionalClasses"
@@ -85,6 +86,7 @@ export default {
           :alt="title"
           :is-screenshot="isScreenshotBool"
           :is-video="isVideoBool"
+          @load="loaded = true"
         />
       </button>
       <image-component
@@ -97,6 +99,7 @@ export default {
         :alt="title"
         :is-screenshot="isScreenshotBool"
         :is-video="isVideoBool"
+        @load="loaded = true"
         />
       <figcaption v-if="caption.length > 0">
         <p v-html="caption" />
