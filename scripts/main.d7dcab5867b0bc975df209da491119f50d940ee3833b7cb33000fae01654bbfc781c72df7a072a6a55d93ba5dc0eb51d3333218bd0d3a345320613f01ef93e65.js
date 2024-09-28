@@ -19197,8 +19197,10 @@ ${codeFrame}` : message);
       </div>
     </template>
     <template v-else>
-      <video v-if="isVideo" :src="src" :title="alt" autoplay muted loop playsinline></video>
-      <img v-else @load="$emit('load')" :width="width" :height="height" :src="src" :alt="alt"/>
+      <div>
+        <video v-if="isVideo" :src="src" :title="alt" autoplay muted loop playsinline></video>
+        <img v-else @load="$emit('load')" :width="width" :height="height" :src="src" :alt="alt"/>
+      </div>
     </template>
   `
     )
@@ -19314,16 +19316,18 @@ ${codeFrame}` : message);
       v-if="showLightbox && !disableInteractionBool"
       @close="showLightbox = false" 
       >
-      <image-component
-        :class="additionalClasses"
-        :src="src"
-        :mat="mat"
-        :height="heightNum"
-        :width="widthNum"
-        :alt="title"
-        :is-screenshot="isScreenshotBool"
-        :is-video="isVideoBool"
-      /> 
+      <figure>
+        <image-component
+          :class="additionalClasses"
+          :src="src"
+          :mat="mat"
+          :height="heightNum"
+          :width="widthNum"
+          :alt="title"
+          :is-screenshot="isScreenshotBool"
+          :is-video="isVideoBool"
+        /> 
+      </figure>
     </lightbox>
   `
     )
