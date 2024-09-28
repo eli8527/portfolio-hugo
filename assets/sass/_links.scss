@@ -17,19 +17,14 @@ a, button:not([disabled]) {
     // text-decoration: none;
     text-decoration-color:    rgba(0, 0, 0, 0);
 
-    > figure {
-      > div.image-mat, > img, > video {
-        box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.22);
-        // transform: scale(1.025);
-      }
+    video, img {
+      transform: scale(1.025);
     }
+    
   }
 
-  > figure {
-    > div.image-mat, > img, > video{
-      box-shadow: none;
-      transition: box-shadow linear calc(0.25 * var(--transition--timing));
-    }
+  video, img {
+    transition: transform linear calc(0.25 * var(--transition--timing));
   }
 
   &:focus-visible {

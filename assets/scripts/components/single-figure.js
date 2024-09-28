@@ -109,16 +109,18 @@ export default {
       v-if="showLightbox && !disableInteractionBool"
       @close="showLightbox = false" 
       >
-      <image-component
-        :class="additionalClasses"
-        :src="src"
-        :mat="mat"
-        :height="heightNum"
-        :width="widthNum"
-        :alt="title"
-        :is-screenshot="isScreenshotBool"
-        :is-video="isVideoBool"
-      /> 
+      <figure>
+        <image-component
+          :class="additionalClasses"
+          :src="src"
+          :mat="mat"
+          :height="heightNum"
+          :width="widthNum"
+          :alt="title"
+          :is-screenshot="isScreenshotBool"
+          :is-video="isVideoBool"
+        /> 
+      </figure>
     </lightbox>
   `
 }

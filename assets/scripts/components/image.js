@@ -16,8 +16,10 @@ export default {
       </div>
     </template>
     <template v-else>
-      <video v-if="isVideo" :src="src" :title="alt" autoplay muted loop playsinline></video>
-      <img v-else @load="$emit('load')" :width="width" :height="height" :src="src" :alt="alt"/>
+      <div>
+        <video v-if="isVideo" :src="src" :title="alt" autoplay muted loop playsinline></video>
+        <img v-else @load="$emit('load')" :width="width" :height="height" :src="src" :alt="alt"/>
+      </div>
     </template>
   `
 };
