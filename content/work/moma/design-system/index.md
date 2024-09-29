@@ -7,13 +7,13 @@ published: false
 preview: 
   image: moma-design.png
   type: screenshot
-  plain: true
+  classes: 'plain'
   mat: '#1263BD'
   title: MoMA.org homepage
 hero:
   image: moma-design.png
   type: screenshot
-  plain: true
+  classes: 'plain'
   title: MoMA.org homepage
 ---
 

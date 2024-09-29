@@ -1,31 +1,15 @@
 import homeInit from './home';
-import ImageC from './components/single-figure.js';
+import Figure from './figure';
+import transition from './transitions'
 
-let Vue;
-
-document.addEventListener('DOMContentLoaded', async () => {
-  if (window.location.protocol === 'https:') {
-    Vue = await import('./vue.esm-browser.prod');
-  } else {
-    Vue = await import('./vue.esm-browser');
-  }  
-  
-  let components = [
-    {name: 'single-figure', component: ImageC},
-  ];
-
-  const app = Vue.createApp({});
-  app.config.compilerOptions.isCustomElement = tag => tag === 'nobr'
-
-  components.forEach((c) => {
-    app.component(c.name, c.component);
-  });
-
-  app.mount('body');
-
-});
 document.addEventListener('DOMContentLoaded', () => {
   if (document.body.classList.contains('home')) {
     homeInit();
   }
+
+  transition(document.querySelectorAll('.transition-content'))
+
+  document.querySelectorAll('figure').forEach((el) => {
+    new Figure(el)
+  })
 });

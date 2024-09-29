@@ -38,7 +38,7 @@
           <ul class="work__list" {{with .Params.Grid}}style="--grid: {{. | safeCSS }};"{{end}}>
             {{- range (sort $works ".Params.Order")}}
               {{- $page := . -}}
-              <li {{with .Params.Span}}style="--span: {{. | safeCSS }};"{{end}}>
+              <li class="transition-content" {{with .Params.Span}}style="--span: {{. | safeCSS }};"{{end}}>
                 <a class="no-underline"
                   {{- if .Params.Link}}
                     href="{{.Params.Link}}"
@@ -49,10 +49,10 @@
                   {{- with .Params.Preview}}
                     {{- if .video}}
                       {{- $media := $page.Resources.GetMatch .video -}}
-                      {{partial "figure.html" (dict "Video" $media "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Plain" .plain) }}
+                      {{partial "figure.html" (dict "Video" $media "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Classes" .classes) }}
                     {{else}}
                       {{- $media := $page.Resources.GetMatch .image -}}
-                      {{partial "figure.html" (dict "Image" ($media.Resize "2200x") "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Plain" .plain) }}
+                      {{partial "figure.html" (dict "Image" ($media.Resize "2200x") "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat "DisableInteraction" true "Classes" .classes) }}
                     {{end -}}
                   {{end -}}
                   <article>

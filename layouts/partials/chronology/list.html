@@ -1,7 +1,7 @@
 <dl>
   {{- range . -}}
     {{- $page := . -}}
-    <dt>
+    <dt class="transition-content">
       <p>{{.Params.Years}}</p>
       <h3 id="{{.Title | urlize}}">
         {{- if eq .Params.Link "self" }}
@@ -21,7 +21,7 @@
         {{end -}}
       </h3>
     </dt>
-    <dd>
+    <dd class="transition-content">
       <!-- {{with .Params.Categories}}
         {{- range .}}
           {{ . }}
@@ -32,7 +32,7 @@
       </p>
     </dd>
     {{- with .Params.PreviewImages}}
-      <dd>
+      <dd class="transition-content">
         <ul class="image__list">
           {{- range .}}
             <li>

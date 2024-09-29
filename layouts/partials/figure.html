@@ -1,16 +1,59 @@
-<single-figure
-  is-screenshot="{{ .IsScreenshot }}"
-  {{ with .DisableInteraction }}disable-interaction="{{. | safeCSS}}"{{ end }}
-  {{ with .MatColor }}mat="{{. | safeCSS}}"{{ end }}
-  {{ with .Plain }}additional-classes="plain"{{ end }}
-  {{ with .Caption }}caption="{{. | safeCSS}}"{{ end }}
-  {{ with .Title }}title="{{.}}"{{ end }}
-  {{ if .Video }}
-    is-video="true"
-    src="{{.Video.RelPermalink}}"
-  {{ else }}
-    src="{{.Image.RelPermalink }}"
-    width="{{.Image.Width}}" 
-    height="{{.Image.Height}}"
-  {{ end }}
-></single-figure>
+<figure>
+  {{- if not .DisableInteraction}}<button>{{end -}}
+    <div 
+      {{if .IsScreenshot}}
+        class="
+          image-mat
+          {{with .Classes}}{{.}}{{end}}
+        " 
+        {{ with .MatColor}}style="--mat-color: {{. | safeCSS}}"{{end}}
+      {{end}}
+      >
+      {{- if .Video}}
+        <video src="{{.Video.RelPermalink}}" {{with .Title}}alt="{{ . | safeCSS}}"{{end}} autoplay muted loop playsinline></video>
+      {{else}}
+        {{- with .Image}}
+        <img loading="lazy" width="{{.Width}}" height="{{.Height}}" src="{{.RelPermalink}}" {{with .Title}}alt="{{.}}"{{end}}/>
+        {{end -}}
+      {{end -}}
+    </div>
+  {{- if not .DisableInteraction}}</button>{{end -}}
+  {{- with .Caption}}
+    <figcaption>
+      <p>{{. | safeHTML}}"</p>
+    </figcaption>
+  {{end -}}
+</figure>
+{{- if not .DisableInteraction}}
+  <div data-lightbox class="lightbox">
+    <button class="lightbox__close">
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        class="sprite--close"
+        >
+        <line x1="1" y1="1" x2="23" y2="23" vector-effect="non-scaling-stroke" />
+        <line x1="1" y1="23" x2="23" y2="1" vector-effect="non-scaling-stroke" />
+      </svg>
+    </button>
+    <figure>
+      <div 
+        {{if .IsScreenshot}}
+          class="
+            image-mat
+            {{with .Classes}}{{.}}{{end}}
+          " 
+          {{ with .MatColor}}style="--mat-color: {{. | safeCSS}}"{{end}}
+        {{end}}
+        >
+        {{- if .Video}}
+          <video src="{{.Video.RelPermalink}}" {{with .Title}}alt="{{ . | safeCSS}}"{{end}} autoplay muted loop playsinline></video>
+        {{else}}
+          {{- with .Image}}
+          <img loading="lazy" width="{{.Width}}" height="{{.Height}}" src="{{.RelPermalink}}" {{with .Title}}alt="{{.}}"{{end}}/>
+          {{end -}}
+        {{end -}}
+      </div>
+    </figure>
+  </div>
+{{end -}}
