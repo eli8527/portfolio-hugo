@@ -114,16 +114,21 @@ a, button:not([disabled]) {
   text-rendering: optimizeLegibility;
 }
 
-em, article aside,
+em, article aside, .markdown aside,
 em em em,
 article aside em em,
+.markdown aside em em,
 em article aside em,
 article em aside em,
-article aside aside em {
+article aside aside em,
+em .markdown aside em,
+.markdown em aside em,
+article aside .markdown aside em,
+.markdown aside aside em {
   font-style: italic;
 }
 
-em em, article aside em, em article aside, article em aside, article aside aside {
+em em, article aside em, .markdown aside em, em article aside, article em aside, article aside aside, em .markdown aside, .markdown em aside, article aside .markdown aside, .markdown aside aside {
   font-style: normal;
 }
 
@@ -154,7 +159,15 @@ article ol > dd,
 article ol > li,
 article dl > dt,
 article dl > dd,
-article dl > li, strong,
+article dl > li, .markdown ul > dt,
+.markdown ul > dd,
+.markdown ul > li,
+.markdown ol > dt,
+.markdown ol > dd,
+.markdown ol > li,
+.markdown dl > dt,
+.markdown dl > dd,
+.markdown dl > li, strong,
 h1,
 h2,
 h3,
@@ -169,9 +182,11 @@ td {
   --typography--margin--right: calc(var(--typography--inset--right) * 1em);
 }
 
-body.work dl, body.about .about__container, body.home main .work, body.home main .work__list li, nav a:first-of-type, article, article ul,
+body.work dl, body.about .about__container, body.home main .work, body.home main .work__list li, nav a:first-of-type, article, .markdown, article ul,
 article ol,
-article dl, figure, a:focus-visible, button:not([disabled]):focus-visible, svg.sprite--circle, svg.sprite--close, svg.sprite--arrow, svg.sprite--moma, article ul > dt,
+article dl, .markdown ul,
+.markdown ol,
+.markdown dl, figure, a:focus-visible, button:not([disabled]):focus-visible, svg.sprite--circle, svg.sprite--close, svg.sprite--arrow, svg.sprite--moma, article ul > dt,
 article ul > dd,
 article ul > li,
 article ol > dt,
@@ -179,7 +194,15 @@ article ol > dd,
 article ol > li,
 article dl > dt,
 article dl > dd,
-article dl > li, strong,
+article dl > li, .markdown ul > dt,
+.markdown ul > dd,
+.markdown ul > li,
+.markdown ol > dt,
+.markdown ol > dd,
+.markdown ol > li,
+.markdown dl > dt,
+.markdown dl > dd,
+.markdown dl > li, strong,
 h1,
 h2,
 h3,
@@ -206,7 +229,15 @@ article ol > dd,
 article ol > li,
 article dl > dt,
 article dl > dd,
-article dl > li, strong,
+article dl > li, .markdown ul > dt,
+.markdown ul > dd,
+.markdown ul > li,
+.markdown ol > dt,
+.markdown ol > dd,
+.markdown ol > li,
+.markdown dl > dt,
+.markdown dl > dd,
+.markdown dl > li, strong,
 h1,
 h2,
 h3,
@@ -235,7 +266,15 @@ td {
   article ol > li,
   article dl > dt,
   article dl > dd,
-  article dl > li, strong,
+  article dl > li, .markdown ul > dt,
+  .markdown ul > dd,
+  .markdown ul > li,
+  .markdown ol > dt,
+  .markdown ol > dd,
+  .markdown ol > li,
+  .markdown dl > dt,
+  .markdown dl > dd,
+  .markdown dl > li, strong,
   h1,
   h2,
   h3,
@@ -255,7 +294,15 @@ article ol > dd:before,
 article ol > li:before,
 article dl > dt:before,
 article dl > dd:before,
-article dl > li:before, strong:before, article ul > dt:after,
+article dl > li:before, .markdown ul > dt:before,
+.markdown ul > dd:before,
+.markdown ul > li:before,
+.markdown ol > dt:before,
+.markdown ol > dd:before,
+.markdown ol > li:before,
+.markdown dl > dt:before,
+.markdown dl > dd:before,
+.markdown dl > li:before, strong:before, article ul > dt:after,
 article ul > dd:after,
 article ul > li:after,
 article ol > dt:after,
@@ -263,7 +310,15 @@ article ol > dd:after,
 article ol > li:after,
 article dl > dt:after,
 article dl > dd:after,
-article dl > li:after, strong:after,
+article dl > li:after, .markdown ul > dt:after,
+.markdown ul > dd:after,
+.markdown ul > li:after,
+.markdown ol > dt:after,
+.markdown ol > dd:after,
+.markdown ol > li:after,
+.markdown dl > dt:after,
+.markdown dl > dd:after,
+.markdown dl > li:after, strong:after,
 h1:before,
 h1:after,
 h2:before,
@@ -292,7 +347,15 @@ article ol > dd:before,
 article ol > li:before,
 article dl > dt:before,
 article dl > dd:before,
-article dl > li:before, strong:before,
+article dl > li:before, .markdown ul > dt:before,
+.markdown ul > dd:before,
+.markdown ul > li:before,
+.markdown ol > dt:before,
+.markdown ol > dd:before,
+.markdown ol > li:before,
+.markdown dl > dt:before,
+.markdown dl > dd:before,
+.markdown dl > li:before, strong:before,
 h1:before,
 h2:before,
 h3:before,
@@ -311,7 +374,15 @@ article ol > dd:after,
 article ol > li:after,
 article dl > dt:after,
 article dl > dd:after,
-article dl > li:after, strong:after,
+article dl > li:after, .markdown ul > dt:after,
+.markdown ul > dd:after,
+.markdown ul > li:after,
+.markdown ol > dt:after,
+.markdown ol > dd:after,
+.markdown ol > li:after,
+.markdown dl > dt:after,
+.markdown dl > dd:after,
+.markdown dl > li:after, strong:after,
 h1:after,
 h2:after,
 h3:after,
@@ -327,9 +398,11 @@ td {
   display: table-cell;
 }
 
-body.work dl, body.about .about__container, body.home main .work, body.home main .work__list li, nav a:first-of-type, article, article ul,
+body.work dl, body.about .about__container, body.home main .work, body.home main .work__list li, nav a:first-of-type, article, .markdown, article ul,
 article ol,
-article dl, figure, a:focus-visible, button:not([disabled]):focus-visible, svg.sprite--circle, svg.sprite--close, svg.sprite--arrow, svg.sprite--moma {
+article dl, .markdown ul,
+.markdown ol,
+.markdown dl, figure, a:focus-visible, button:not([disabled]):focus-visible, svg.sprite--circle, svg.sprite--close, svg.sprite--arrow, svg.sprite--moma {
   --typography--cap: calc(var(--typography--cap-height) * 1em);
   --typography--between: calc(var(--typography--font-size) * (var(--typography--leading) + var(--typography--shoulder) - 1));
   line-height: var(--typography--line-height);
@@ -436,7 +509,7 @@ figure div.image-mat:not(.plain) img, figure div.image-mat:not(.plain) video {
   border-radius: 1%/1.5%;
 }
 figure img, figure video {
-  max-height: 60vh;
+  max-height: 80vh;
   width: auto;
   display: block;
 }
@@ -531,44 +604,58 @@ main > section:last-of-type {
   margin-top: auto;
 }
 
-article {
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--gutter);
+}
+@media (min-width: 768px) {
+  .columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+article, .markdown {
   --typography--leading-shoulder: calc(var(--typography--between) + var(--typography--line-height));
 }
-article > *:not(:first-child) {
+article > *:not(:first-child), .markdown > *:not(:first-child) {
   margin-top: var(--margin--top, var(--typography--leading-shoulder));
 }
-article > figure {
+article > figure, .markdown > figure {
   --margin--top: calc(2 * var(--gutter));
 }
-article > figure + * {
+article > figure + *, .markdown > figure + * {
   --margin--top: calc(2 * var(--gutter));
 }
-article h2 {
+article h2, .markdown h2 {
   --margin--top: calc(2 * var(--gutter));
 }
-article h3 {
+article h3, .markdown h3 {
   --margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
 }
-article p:not(._), article li:not(._) {
+article p:not(._), article li:not(._), .markdown p:not(._), .markdown li:not(._) {
   max-width: 75ch;
 }
-article aside {
+article aside, .markdown aside {
   --margin--top: calc(var(--typography--between) + (var(--typography--line-height) * 2));
 }
-article hr {
+article hr, .markdown hr {
   --margin--top: calc(2 * var(--gutter));
   border-top: 1px solid black;
 }
 article ul,
-article ol {
+article ol, .markdown ul,
+.markdown ol {
   gap: var(--typography--between);
 }
-article dl {
+article dl, .markdown dl {
   gap: var(--typography--leading-shoulder);
 }
 article ul,
 article ol,
-article dl {
+article dl, .markdown ul,
+.markdown ol,
+.markdown dl {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   list-style-position: outside;
@@ -581,9 +668,36 @@ article ol > dd,
 article ol > li,
 article dl > dt,
 article dl > dd,
-article dl > li {
+article dl > li, .markdown ul > dt,
+.markdown ul > dd,
+.markdown ul > li,
+.markdown ol > dt,
+.markdown ol > dd,
+.markdown ol > li,
+.markdown dl > dt,
+.markdown dl > dd,
+.markdown dl > li {
   margin-bottom: var(--typography--margin--bottom);
   margin-top: var(--typography--margin--top);
+}
+article ul > dt:has(p),
+article ul > dd:has(p),
+article ul > li:has(p),
+article ol > dt:has(p),
+article ol > dd:has(p),
+article ol > li:has(p),
+article dl > dt:has(p),
+article dl > dd:has(p),
+article dl > li:has(p), .markdown ul > dt:has(p),
+.markdown ul > dd:has(p),
+.markdown ul > li:has(p),
+.markdown ol > dt:has(p),
+.markdown ol > dd:has(p),
+.markdown ol > li:has(p),
+.markdown dl > dt:has(p),
+.markdown dl > dd:has(p),
+.markdown dl > li:has(p) {
+  margin-bottom: unset;
 }
 article ul > dt:before, article ul > dt:after,
 article ul > dd:before,
@@ -601,7 +715,23 @@ article dl > dt:after,
 article dl > dd:before,
 article dl > dd:after,
 article dl > li:before,
-article dl > li:after {
+article dl > li:after, .markdown ul > dt:before, .markdown ul > dt:after,
+.markdown ul > dd:before,
+.markdown ul > dd:after,
+.markdown ul > li:before,
+.markdown ul > li:after,
+.markdown ol > dt:before,
+.markdown ol > dt:after,
+.markdown ol > dd:before,
+.markdown ol > dd:after,
+.markdown ol > li:before,
+.markdown ol > li:after,
+.markdown dl > dt:before,
+.markdown dl > dt:after,
+.markdown dl > dd:before,
+.markdown dl > dd:after,
+.markdown dl > li:before,
+.markdown dl > li:after {
   display: none;
 }
 article ul > dt,
@@ -609,23 +739,35 @@ article ul > li,
 article ol > dt,
 article ol > li,
 article dl > dt,
-article dl > li {
+article dl > li, .markdown ul > dt,
+.markdown ul > li,
+.markdown ol > dt,
+.markdown ol > li,
+.markdown dl > dt,
+.markdown dl > li {
   display: list-item;
 }
 article ul,
-article dl {
+article dl, .markdown ul,
+.markdown dl {
   list-style-type: "–";
   padding-left: 0.5em;
 }
-article ul > li {
+article ul > li, .markdown ul > li {
   padding-left: 0.666em;
 }
-article figure img {
+article figure img, .markdown figure img {
   object-fit: contain;
 }
-article iframe {
+article figure + div.lightbox, .markdown figure + div.lightbox {
+  margin: unset;
+}
+article iframe, .markdown iframe {
   width: 100%;
   aspect-ratio: var(--aspect-ratio, 16/9);
+}
+article a, .markdown a {
+  display: inline;
 }
 
 nav {
@@ -755,6 +897,9 @@ body.home main .work__list li a > figure img {
   height: 100%;
   object-fit: cover;
   max-height: unset;
+}
+body.home main .work__list li a > figure div {
+  width: 100%;
 }
 body.home main .work__list li a > figure div.image-mat img {
   max-width: 100%;
@@ -892,7 +1037,10 @@ body.work .hero {
   display: flex;
   justify-content: center;
 }
-body.work .hero figure img, body.work .hero figure video {
+body.work .hero > figure div {
+  max-width: calc(var(--max-width) + 2 * var(--gutter));
+}
+body.work .hero > figure div img, body.work .hero > figure div video {
   max-width: min(100%, var(--max-width));
 }
 
@@ -901,9 +1049,9 @@ body.work .hero figure img, body.work .hero figure video {
   --typography--leading--heading: 1.1;
   --typography--size: 1.6rem;
   --typography--size--card: calc(var(--typography--size) * 1.45);
-  --typography--size--h1: calc(var(--typography--size) * 2.5);
-  --typography--size--h2: calc(var(--typography--size) * 2);
-  --typography--size--h3: calc(var(--typography--size) * 1.66);
+  --typography--size--h1: calc(var(--typography--size) * 2.75);
+  --typography--size--h2: calc(var(--typography--size) * 2.1);
+  --typography--size--h3: calc(var(--typography--size) * 1.5);
   --typography--size--caption: calc(var(--typography--size) * 0.875);
   --gutter: 2.0rem;
   --max-width: 110.0rem;
@@ -924,9 +1072,9 @@ body.work .hero figure img, body.work .hero figure video {
   :root {
     --typography--size: 1.8rem;
     --typography--size--card: calc(var(--typography--size) * 2.5);
-    --typography--size--h1: calc(var(--typography--size) * 3);
-    --typography--size--h2: calc(var(--typography--size) * 2);
-    --typography--size--h3: calc(var(--typography--size) * 1.66);
+    --typography--size--h1: calc(var(--typography--size) * 3.5);
+    --typography--size--h2: calc(var(--typography--size) * 2.5);
+    --typography--size--h3: calc(var(--typography--size) * 1.6);
     --gutter: 4.0rem;
   }
 }
