@@ -66,7 +66,7 @@
   var transitions_default = (els) => {
     const options = {
       // rootMargin: "0px",
-      threshold: 0.5
+      threshold: 0.25
     };
     let observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
