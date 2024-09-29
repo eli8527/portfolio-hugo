@@ -56,7 +56,7 @@
                     {{end -}}
                   {{end -}}
                   <article>
-                    <h3 id="{{.Title | urlize }}">{{.Title}}{{if .Params.Link}}{{ partial "sprites/arrow.html" (dict "Class" "upper-right") }}{{end}}</h3>
+                    <h4 id="{{.Title | urlize }}">{{.Title}}{{if .Params.Link}}{{ partial "sprites/arrow.html" (dict "Class" "upper-right") }}{{end}}</h4>
                     <p>{{.Description | markdownify}}</p>
                   </article>
                 </a>

@@ -129,11 +129,11 @@ body.home {
             }
           }
 
-          h3 {
+          h4{
             color: var(--color--blue);
           }
 
-          h3 + p {
+          h4 + p {
             margin-top: var(--typography--between);
           }
         }

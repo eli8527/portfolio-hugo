@@ -11,9 +11,9 @@
   {{end -}}
 {{end -}}
 {{- if .Get "video"}}
-  {{partial "figure.html" (dict "Video" (.Get "src") "Title" (.Get "title") "IsScreenshot" $isScreenshot "MatColor" (.Get "mat") "DisableInteraction" $disableInteraction "Classes" (.Get "class" | safeCSS)) }}
+  {{partial "figure.html" (dict "Video" (.Get "src") "Title" (.Get "title") "IsScreenshot" $isScreenshot "MatColor" (.Get "mat") "DisableInteraction" $disableInteraction "Classes" (.Get "class" | safeCSS) "Caption" (.Get "caption" | markdownify)) }}
 {{else}}
   {{- $original := (.Page.Resources.ByType "image").GetMatch (printf "%s" (.Get "src")) -}}
   {{- $resized := ($original.Resize "2000x") -}}
-  {{partial "figure.html" (dict "Image" $resized "Title" (.Get "title") "IsScreenshot" $isScreenshot "MatColor" (.Get "mat") "DisableInteraction" $disableInteraction "Classes" (.Get "class" | safeCSS)) }}
+  {{partial "figure.html" (dict "Image" $resized "Title" (.Get "title") "IsScreenshot" $isScreenshot "MatColor" (.Get "mat") "DisableInteraction" $disableInteraction "Classes" (.Get "class" | safeCSS) "Caption" (.Get "caption" | markdownify)) }}
 {{end -}}

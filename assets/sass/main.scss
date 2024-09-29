@@ -24,6 +24,8 @@
   --typography--size--card: calc(var(--typography--size) * 1.45);
   --typography--size--h1: calc(var(--typography--size) * 2.5);
   --typography--size--h2: calc(var(--typography--size) * 2);
+  --typography--size--h3: calc(var(--typography--size) * 1.66);
+  
   --typography--size--caption: calc(var(--typography--size) * 0.875);
 
   --gutter: 2.0rem;
@@ -48,13 +50,15 @@
     --typography--size--card: calc(var(--typography--size) * 2.5);
     --typography--size--h1: calc(var(--typography--size) * 3);
     --typography--size--h2: calc(var(--typography--size) * 2);
+    --typography--size--h3: calc(var(--typography--size) * 1.66);
 
     --gutter: 4.0rem;
   }
 }
 
 h1,
-h2 {
+h2,
+h3 {
   @extend %font--arnhem;
   
   --typography--leading: var(--typography--leading--heading);
@@ -94,6 +98,10 @@ h2 {
     display: inline-block;
     visibility: hidden
   }
+}
+
+h3 {
+  --typography--size: var(--typography--size--h3);
 }
 
 

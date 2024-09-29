@@ -15,18 +15,22 @@ figure {
   }
 
   button {
-    width: 100%;
+    // width: 100%;
     height: 100%;
+
+    &:has(div.image-mat) {
+      width: 100%;
+    }
   }
 
   div {
-    width: 100%;
     height: 100%;
     border-radius: calc(0.5 * var(--typography--cap));
     
     overflow: hidden;
 
     &.image-mat {
+      width: 100%;
       background-color: var(--mat-color, #eee);
       padding: calc(1 * var(--gutter));
       box-sizing: border-box;
