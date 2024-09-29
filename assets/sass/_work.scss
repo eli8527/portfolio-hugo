@@ -28,10 +28,15 @@ body.work {
     display: flex;
     justify-content: center;
     
-    figure {
-      img, video {
-        max-width: min(100%, var(--max-width))
+    > figure {
+      div {
+        max-width: calc(var(--max-width) + 2 * var(--gutter));
+
+        img, video {
+          max-width: min(100%, var(--max-width))
+        }
       }
+      
     }
   }
 }

@@ -1,0 +1,5 @@
+<div class="columns">
+  {{- range split .Inner "<--->" }}
+    <div class="markdown">{{ . | safeHTML }}</div>
+  {{- end }}
+</div>

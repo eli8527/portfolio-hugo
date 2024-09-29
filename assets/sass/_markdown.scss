@@ -1,6 +1,6 @@
 @use 'typography';
 
-article {
+article, .markdown {
   @extend %type--layout;
 
   --typography--leading-shoulder: calc(var(--typography--between) + var(--typography--line-height));
@@ -59,6 +59,10 @@ article {
 
 			margin-bottom: var(--typography--margin--bottom);
 			margin-top:    var(--typography--margin--top);
+
+			&:has(p) {
+				margin-bottom: unset;
+			}
 			
 			&:before, &:after { display: none } // Collides with the marker, so we use the margin.
     }
@@ -87,8 +91,16 @@ article {
 		}
 	}
 
+	figure + div.lightbox {
+		margin: unset;
+	}
+
 	iframe {
 		width: 100%;
 		aspect-ratio: var(--aspect-ratio, 16/9);
+	}
+
+	a {
+		display: inline;
 	}
 }

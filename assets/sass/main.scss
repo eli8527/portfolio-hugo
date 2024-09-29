@@ -22,9 +22,9 @@
 
   --typography--size: 1.6rem;
   --typography--size--card: calc(var(--typography--size) * 1.45);
-  --typography--size--h1: calc(var(--typography--size) * 2.5);
-  --typography--size--h2: calc(var(--typography--size) * 2);
-  --typography--size--h3: calc(var(--typography--size) * 1.66);
+  --typography--size--h1: calc(var(--typography--size) * 2.75);
+  --typography--size--h2: calc(var(--typography--size) * 2.1);
+  --typography--size--h3: calc(var(--typography--size) * 1.5);
   
   --typography--size--caption: calc(var(--typography--size) * 0.875);
 
@@ -48,9 +48,9 @@
   @include desktop {
     --typography--size: 1.8rem;
     --typography--size--card: calc(var(--typography--size) * 2.5);
-    --typography--size--h1: calc(var(--typography--size) * 3);
-    --typography--size--h2: calc(var(--typography--size) * 2);
-    --typography--size--h3: calc(var(--typography--size) * 1.66);
+    --typography--size--h1: calc(var(--typography--size) * 3.5);
+    --typography--size--h2: calc(var(--typography--size) * 2.5);
+    --typography--size--h3: calc(var(--typography--size) * 1.6);
 
     --gutter: 4.0rem;
   }

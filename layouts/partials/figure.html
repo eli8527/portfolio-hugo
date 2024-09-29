@@ -1,13 +1,13 @@
 <figure>
   {{- if not .DisableInteraction}}<button>{{end -}}
     <div 
-      {{if .IsScreenshot}}
+      {{- if .IsScreenshot}}
         class="
           image-mat
           {{with .Classes}}{{.}}{{end}}
         " 
         {{ with .MatColor}}style="--mat-color: {{. | safeCSS}}"{{end}}
-      {{end}}
+      {{end -}}
       >
       {{- if .Video}}
         <video src="{{.Video.RelPermalink}}" {{with .Title}}alt="{{ . | safeCSS}}"{{end}} autoplay muted loop playsinline></video>
@@ -38,19 +38,19 @@
     </button>
     <figure>
       <div 
-        {{if .IsScreenshot}}
+        {{- if .IsScreenshot}}
           class="
             image-mat
             {{with .Classes}}{{.}}{{end}}
           " 
           {{ with .MatColor}}style="--mat-color: {{. | safeCSS}}"{{end}}
-        {{end}}
+        {{end -}}
         >
         {{- if .Video}}
           <video src="{{.Video.RelPermalink}}" {{with .Title}}alt="{{ . | safeCSS}}"{{end}} autoplay muted loop playsinline></video>
         {{else}}
           {{- with .Image}}
-          <img loading="lazy" width="{{.Width}}" height="{{.Height}}" src="{{.RelPermalink}}" {{with .Title}}alt="{{.}}"{{end}}/>
+            <img loading="lazy" width="{{.Width}}" height="{{.Height}}" src="{{.RelPermalink}}" {{with .Title}}alt="{{.}}"{{end}}/>
           {{end -}}
         {{end -}}
       </div>

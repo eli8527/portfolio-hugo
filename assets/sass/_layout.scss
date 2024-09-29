@@ -1,5 +1,6 @@
 @use 'fonts';
 @use 'typography';
+@use 'mixins' as *;
 
 %constrain-width {
   margin: 0 auto;
@@ -30,4 +31,14 @@ main {
 
 section {
   @extend %constrain-width;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--gutter);
+  
+  @include desktop {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
