@@ -3,11 +3,11 @@
 @use 'mixins' as *;
 
 :root {
-  --card--main--height: 60vh;
+  --card--main--height: 85vh;
   --card--footer--height: 10vh;
 
   @supports(height: 100svh) {
-    --card--main--height: 60svh;
+    --card--main--height: 85svh;
     --card--footer--height: 10svh;
   }
 }

@@ -5,7 +5,7 @@ title: Eric Li
 params:
   # ga: 'G-65504XST5T'
   goatCounter: 'ericli'
-  tagline: I am a multidisciplinary product leader, designer, software engineer, and educator based in <nobr>New York</nobr>.
+  tagline: I craft thoughtfully considered and executed digital experiences for users through design and code.
 
 permalinks:
   work: /:sections[last]-:filename/

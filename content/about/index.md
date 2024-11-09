@@ -9,11 +9,11 @@ profile:
 colophon: |
   This website was built with [Hugo](https://gohugo.io/) and hosted on [GitHub Pages](https://pages.github.com/). It is set using the same typographic stylesheet that [Michael Fehrenbach](https://michaelfehrenbach.com/) and I developed for use in [moma.org](https://www.moma.org/) and [eamesinstitute.org](https://www.eamesinstitute.org/). The typefaces used are Arnhem and Neue Haas Grotesk. 
 ---
-Hi, I’m Eric — a multidiscplinary product leader, designer, software engineer, and educator based in <nobr>New York</nobr>. I view software as a medium for good design, and care deeply about craft and execution.
+Hi, I’m Eric — a product leader, designer, software engineer, and educator based in <nobr>New York</nobr>. I view software as a medium for good design, and care deeply about craft and execution. 
 
-At the Eames Institute, my role as Senior Digital Product Director is to oversee and translate all the amazing work we do to our digital surfaces. My work ranges from design and development to strategy; and mainly covers the website, as well as the myriad of other digital platforms we use to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors.
+I’m currently focused on creating something new at Orchard Analytics and also teach computer science in the Communication Design program at Parsons.
 
-Prior to joining the Eames Institute, I was the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and LUST. 
+At the Eames Institute, my role as Senior Digital Product Director was to oversee and translate all the amazing work we do to our digital surfaces. My work ranged from design and development to strategy; and mainly covered the website, as well as the myriad of other digital platforms used to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors. Previously, I was the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and LUST. 
 
 I also teach interaction design and computer science at Parsons, and have been an invited guest at Princeton, Yale, NYU, SVA, TCNJ, Rutgers, Pratt, CCA, RISD, and UPenn.
 
