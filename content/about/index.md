@@ -11,9 +11,9 @@ colophon: |
 ---
 Hi, I’m Eric — a product leader, designer, software engineer, and educator based in <nobr>New York</nobr>. I view software as a medium for good design, and care deeply about craft and execution. 
 
-I’m currently focused on creating something new at Orchard Analytics and also teach computer science in the Communication Design program at Parsons.
+I’m currently a design engineer at Notion, focusing on design systems on the web presence team.
 
-At the Eames Institute, my role as Senior Digital Product Director was to oversee and translate all the amazing work we do to our digital surfaces. My work ranged from design and development to strategy; and mainly covered the website, as well as the myriad of other digital platforms used to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors. Previously, I was the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and LUST. 
+Previously at the Eames Institute, my role as Senior Digital Product Director was to oversee and translate all the amazing work we do to our digital surfaces. My work ranged from design and development to strategy; and mainly covered the website, as well as the myriad of other digital platforms used to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors. I was also the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Switchboard, Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and LUST. 
 
 I also teach interaction design and computer science at Parsons, and have been an invited guest at Princeton, Yale, NYU, SVA, TCNJ, Rutgers, Pratt, CCA, RISD, and UPenn.
 
@@ -45,7 +45,7 @@ I graduated summa cum laude with a B.S.E. in computer science and visual arts fr
 - [*When It Changed*](https://www.are.na/blog/when-it-changed-part-1), a series of essays with David Reinfurt for the first Are.na&nbsp;annual.
 
 ### Selected Clients and Collaborators
-The Museum of Modern Art, ICA London, Adam Pendleton, Harry Frank Guggenheim Foundation, Miko McGinty, IDSR Architecture, Orchard Analytics, MGMT design, Karel Martens, *The Brooklyn Rail*, CUE Art Foundation, Yale School of Architecture, Ford, Sternberg Press, World Press Photo, Princeton&nbsp;University
+The Museum of Modern Art, Rviers Institute, ICA London, Adam Pendleton, Harry Frank Guggenheim Foundation, Miko McGinty, IDSR Architecture, Orchard Analytics, MGMT design, Karel Martens, *The Brooklyn Rail*, CUE Art Foundation, Yale School of Architecture, Ford, Sternberg Press, World Press Photo, Princeton&nbsp;University
 
 ---
 
