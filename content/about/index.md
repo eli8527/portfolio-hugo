@@ -9,15 +9,17 @@ profile:
 colophon: |
   This website was built with [Hugo](https://gohugo.io/) and hosted on [GitHub Pages](https://pages.github.com/). It is set using the same typographic stylesheet that [Michael Fehrenbach](https://michaelfehrenbach.com/) and I developed for use in [moma.org](https://www.moma.org/) and [eamesinstitute.org](https://www.eamesinstitute.org/). The typefaces used are Arnhem and Neue Haas Grotesk. 
 ---
-Hi, I’m Eric — a product leader, designer, software engineer, and educator based in <nobr>New York</nobr>. I view software as a medium for good design, and care deeply about craft and execution. 
+Hi, I’m Eric — a designer, software engineer, and educator based in <nobr>New York</nobr>. I view software as a medium for good design, and care deeply about craft and execution. 
 
 I’m currently a design engineer at Notion, focusing on design systems on the web presence team.
 
-Previously at the Eames Institute, my role as Senior Digital Product Director was to oversee and translate all the amazing work we do to our digital surfaces. My work ranged from design and development to strategy; and mainly covered the website, as well as the myriad of other digital platforms used to share the lessons of Ray and Charles Eames. I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors. I was also the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Switchboard, Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and LUST. 
+Previously at the Eames Institute, my role as Senior Digital Product Director was to oversee and translate all the amazing work we do to our digital surfaces. My work ranged from design and development to strategy; and mainly covered the website, as well as the myriad of other digital platforms used to share the lessons of Ray and Charles Eames. 
 
-I also teach interaction design and computer science at Parsons, and have been an invited guest at Princeton, Yale, NYU, SVA, TCNJ, Rutgers, Pratt, CCA, RISD, and UPenn.
+I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors. I was also the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Switchboard, Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and&nbsp;LUST. 
 
-I graduated summa cum laude with a B.S.E. in computer science and visual arts from Princeton, where I was the recipient of the Jim Seawright Award in Visual Arts.
+I also teach interaction design and computer science at Parsons, and have been an invited guest at Princeton, Yale, NYU, SVA, TCNJ, Rutgers, Pratt, CCA, RISD, and&nbsp;UPenn.
+
+I graduated summa cum laude with a B.S.E. in computer science and visual arts from Princeton, where I was the recipient of the Jim Seawright Award in Visual&nbsp;Arts.
 
 
 ### Links
@@ -36,6 +38,8 @@ I graduated summa cum laude with a B.S.E. in computer science and visual arts fr
 - [Multi not Multi](https://www.instagram.com/multi.not.multi/)
 
 ### Writing, Interviews, Talks, Panels
+- [Applied Math in Art in Archives](https://www.rutharts.org/programming/program/applied-math-in-art-and-archives), a panel discussion at Ruth Arts on the relationship between the artist Bettina’s work and mathematical rigor.
+- [*A \*Co-\* Program for Graphic Design*](https://www.inventorypress.com/product/a-co-program-for-graphic-design), a contributor to the introduction to a book about graphic design by David Reinfurt.
 - [Why I Do What I Do](https://www.youtube.com/watch?v=1Fxsb2_VdBw), a talk given as part of the Parsons yearly Communication Design speaker series.
 - [CSS Inline Layout Design Review Workshop](https://fantasai.inkedblade.net/style/events/inline-workshop), invited guest to a workshop about upcoming typographic CSS properties on the web.
 - [*Tools not Rules*](https://uxdesign.cc/tools-not-rules-9daef895aab7), article by Matt Owens, contribution on MoMA design tooling and infrastructure.
