@@ -54,7 +54,7 @@ details ::-webkit-details-marker {
   display: none;
 }
 
-:root, h1,
+:root, body.home main .chronology dl dt h3, h1,
 h2,
 h3, body.home header article {
   --typography--shoulder: calc(1 - var(--typography--cap-height));
@@ -75,7 +75,7 @@ h3, body.home header article {
   font-family: "Arnhem", serif, sans-serif;
 }
 
-:root {
+:root, body.home main .chronology dl dt h3 {
   --typography--cap-height: 0.744;
   --typography--x-height: 0.537;
   --typography--shoulder--bottom: 0.133;
@@ -941,6 +941,11 @@ body.home main .chronology dl dt {
   body.home main .chronology dl dt:last-of-type {
     border-bottom: 1px solid black;
   }
+}
+body.home main .chronology dl dt h3 {
+  --typography--size: revert;
+  --typography--leading: revert;
+  text-wrap: balance;
 }
 body.home main .chronology dl dd {
   padding-top: calc(1 * var(--gutter));
