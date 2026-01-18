@@ -3,7 +3,7 @@ export default (els) => {
     // rootMargin: "0px",
     threshold: 0.25,
   };
-  
+
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -16,5 +16,5 @@ export default (els) => {
   els.forEach((el) => {
     observer.observe(el)
   })
-  
+
 }

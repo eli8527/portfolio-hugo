@@ -1,47 +1,48 @@
 <dl>
   {{- range . -}}
-    {{- $page := . -}}
-    <dt class="transition-content">
-      <p>{{.Params.Years}}</p>
-      <h3 id="{{.Title | urlize}}">
-        {{- if eq .Params.Link "self" }}
-          <a class="no-underline" href="{{.RelPermalink}}">{{ .Title | markdownify}}</a>
-        {{- else if eq .Params.Link "none" -}}
-          {{ .Title | markdownify}}
-        {{- else -}}
-          {{ $title := split (.Title | markdownify) " " }}
-          <a class="no-underline" href="{{.Params.Link}}">
-            {{- range $idx, $val := $title}}
-              {{- if eq $idx (sub (len $title) 1)}}<nobr>{{end -}}
-              {{$val | safeHTML}}
-            {{end -}}
-            {{ partial "sprites/arrow.html" (dict "Class" "upper-right") }}
-            </nobr>
-          </a>
-        {{end -}}
-      </h3>
-    </dt>
-    <dd class="transition-content">
-      <!-- {{with .Params.Categories}}
+  {{- $page := . -}}
+  <dt class="">
+    <p>{{.Params.Years}}</p>
+    <h3 id="{{.Title | urlize}}">
+      {{- if eq .Params.Link "self" }}
+      <a class="no-underline" href="{{.RelPermalink}}">{{ .Title | markdownify}}</a>
+      {{- else if eq .Params.Link "none" -}}
+      {{ .Title | markdownify}}
+      {{- else -}}
+      {{ $title := split (.Title | markdownify) " " }}
+      <a class="no-underline" href="{{.Params.Link}}">
+        {{- range $idx, $val := $title}}
+        {{- if eq $idx (sub (len $title) 1)}}<nobr>{{end -}}
+          {{$val | safeHTML}}
+          {{end -}}
+          {{ partial "sprites/arrow.html" (dict "Class" "upper-right") }}
+        </nobr>
+      </a>
+      {{end -}}
+    </h3>
+  </dt>
+  <dd class="">
+    <!-- {{with .Params.Categories}}
         {{- range .}}
           {{ . }}
         {{end -}}
       {{end}} -->
-      <p>
-        {{ .Description | markdownify }}
-      </p>
-    </dd>
-    {{- with .Params.PreviewImages}}
-      <dd class="transition-content">
-        <ul class="image__list">
-          {{- range .}}
-            <li>
-              {{- $image := $page.Resources.GetMatch .src -}}
-              {{partial "figure.html" (dict "Image" ($image.Resize "900x") "Title" .title "IsScreenshot" (eq .type "screenshot") "MatColor" .mat) }}
-            </li>
-          {{end -}}
-        </ul>
-      </dd>
-    {{end -}}
+    <p>
+      {{ .Description | markdownify }}
+    </p>
+  </dd>
+  {{- with .Params.PreviewImages}}
+  <dd class="">
+    <ul class="image__list">
+      {{- range .}}
+      <li>
+        {{- $image := $page.Resources.GetMatch .src -}}
+        {{partial "figure.html" (dict "Image" ($image.Resize "900x") "Title" .title "IsScreenshot" (eq .type
+        "screenshot") "MatColor" .mat) }}
+      </li>
+      {{end -}}
+    </ul>
+  </dd>
+  {{end -}}
   {{ end -}}
 </dl>
