@@ -18,7 +18,7 @@ body.home {
   header {
     --color: var(--color--white);
     --color--link: var(--color--white);
-    
+
     background-color: var(--color--blue);
     display: grid;
     position: fixed;
@@ -28,7 +28,7 @@ body.home {
     transition: var(--transition);
     text-wrap: balance;
 
-    > div {
+    >div {
       padding: var(--gutter);
       display: flex;
       align-items: center;
@@ -38,9 +38,9 @@ body.home {
 
       &:first-of-type {
         grid-row: span 1;
-        animation: animate-in linear  calc(0.5 * var(--transition--timing)) forwards;
+        animation: animate-in linear calc(0.5 * var(--transition--timing)) forwards;
       }
-  
+
       &:last-of-type {
         grid-row: 3 / span 1;
       }
@@ -50,6 +50,7 @@ body.home {
       div:first-of-type {
         opacity: 0;
       }
+
       div:last-of-type {
         opacity: 1;
       }
@@ -61,14 +62,14 @@ body.home {
 
       --typography--leading: var(--typography--leading--heading);
       --typography--size: var(--typography--size--card);
-      
+
       h1 {
         --typography--size: var(--typography--size--card);
       }
     }
   }
-  
-  header + main {
+
+  header+main {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
@@ -77,7 +78,7 @@ body.home {
     margin-bottom: var(--card--footer--height);
     gap: calc(2 * var(--gutter));
 
-    > section:last-child {
+    >section:last-child {
       margin-top: unset;
     }
 
@@ -92,24 +93,25 @@ body.home {
         display: grid;
         grid-template-columns: minmax(0, 1fr);
         gap: var(--gutter);
-        
+
         @include desktop {
           grid-template-columns: repeat(var(--grid, 2), minmax(0, 1fr));
         }
 
         li {
-          @extend %type--layout;          
+          @extend %type--layout;
 
           @include desktop {
             grid-column: span var(--span, 1);
           }
+
           a {
             color: currentColor;
             display: grid;
             gap: calc(0.5 * var(--gutter));
             grid-template-rows: fit-content 1fr;
 
-            > figure {
+            >figure {
               aspect-ratio: 3/2;
 
               img {
@@ -133,11 +135,11 @@ body.home {
             }
           }
 
-          h4{
+          h4 {
             color: var(--color--blue);
           }
 
-          h4 + p {
+          h4+p {
             margin-top: var(--typography--between);
           }
         }
@@ -152,11 +154,11 @@ body.home {
       dl {
         display: grid;
         grid-template-columns: minmax(0, 1fr);
-        
+
         @include desktop {
           grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
         }
-        
+
         dt {
           padding-top: calc(1 * var(--gutter));
           border-top: 1px solid black;
@@ -172,6 +174,13 @@ body.home {
               border-bottom: 1px solid black;
             }
           }
+
+          h3 {
+            @extend %font--haas;
+
+            --typography--size: revert;
+            --typography--leading: revert;
+          }
         }
 
         dd {
@@ -181,17 +190,17 @@ body.home {
           &:last-of-type {
             border-bottom: 1px solid black;
           }
-          
+
           @include desktop {
             padding-top: calc(0.5 * var(--gutter));
             padding-bottom: calc(0.5 * var(--gutter));
-          
+
             border-top: 1px solid black;
             padding-left: var(--gutter);
           }
         }
 
-        dd + dd {
+        dd+dd {
           border-top: none;
           padding-left: unset;
           padding-top: unset;
@@ -199,20 +208,20 @@ body.home {
           @include desktop {
             grid-column: span 2;
           }
-          
+
           ul {
             display: flex;
             gap: calc(0.5 * var(--gutter));
             overflow-x: scroll;
             overflow-y: hidden;
-            
+
             li {
               flex-shrink: 0;
               height: calc(7 * var(--gutter));
 
-              > figure {
+              >figure {
                 height: 100%;
-                
+
                 img {
                   height: 100%;
                   width: auto;
