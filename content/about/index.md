@@ -11,9 +11,9 @@ colophon: |
 ---
 Hi, I’m Eric — a designer, software engineer, and educator based in <nobr>New York</nobr>. I view software as a medium for good design, and care deeply about craft and execution. 
 
-I’m currently a design engineer at Notion, focusing on design systems on the web presence team.
+I’m currently a Member of Design Staff at Thinking Machines Lab.
 
-Previously at the Eames Institute, my role as Senior Digital Product Director was to oversee and translate all the amazing work we do to our digital surfaces. My work ranged from design and development to strategy; and mainly covered the website, as well as the myriad of other digital platforms used to share the lessons of Ray and Charles Eames. 
+Previously I was a staff design engineer at Notion, focusing on design systems and agentic workflows on the web presence team. At the Eames Institute, my role as Senior Digital Product Director was to oversee and translate all the amazing work we do to our digital surfaces. My work ranged from design and development to strategy; and mainly covered the website, as well as the myriad of other digital platforms used to share the lessons of Ray and Charles Eames. 
 
 I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors. I was also the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Switchboard, Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and&nbsp;LUST. 
 
