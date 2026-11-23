@@ -17,7 +17,7 @@ Previously I was a staff design engineer at Notion, focusing on design systems a
 
 I am a firm believer in moving/building iteratively and thinking deeply, working across physical and digital boundaries to ensure the best user experience for our visitors. I was also the Senior Product Designer and Developer at MoMA, where I led product design, front-end, and digital strategy of the Museum’s website and other digital surfaces. In addition to MoMA, I have worked at Switchboard, Cinder, <nobr>O-R-G</nobr>, Google Design, IDEO, and&nbsp;LUST. 
 
-I also teach interaction design and computer science at Parsons, and have been an invited guest at Princeton, Yale, NYU, SVA, TCNJ, Rutgers, Pratt, CCA, RISD, and&nbsp;UPenn.
+I also teach interaction design and computer science at Parsons, and have been an invited guest at Princeton, Yale, NYU, SVA, TCNJ, Rutgers, Pratt, CCA, RISD, Wesleyan, and&nbsp;UPenn.
 
 I graduated summa cum laude with a B.S.E. in computer science and visual arts from Princeton, where I was the recipient of the Jim Seawright Award in Visual&nbsp;Arts.
 
